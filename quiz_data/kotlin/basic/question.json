@@ -1,0 +1,107 @@
+{
+    "Chapter 1": [
+      {
+        "question": "In Kotlin, what is the keyword used to declare a variable that can be modified after it is initialized?",
+        "options": [
+          "val",
+          "var",
+          "const",
+          "final"
+        ],
+        "correct_answer": "var"
+      },
+      {
+        "question": "What is the Kotlin standard library function used for iterating through collections?",
+        "options": [
+          "forEach",
+          "for",
+          "loop",
+          "iterate"
+        ],
+        "correct_answer": "forEach"
+      },
+      {
+        "question": "In Kotlin, what is the Elvis operator used for?",
+        "options": [
+          "Perform arithmetic operations",
+          "Handle exceptions",
+          "Assign default values when a nullable variable is null",
+          "Create anonymous functions"
+        ],
+        "correct_answer": "Assign default values when a nullable variable is null"
+      },
+      {
+        "question": "What is a data class in Kotlin primarily used for?",
+        "options": [
+          "Creating utility functions",
+          "Defining data structures",
+          "Handling exceptions",
+          "Implementing interfaces"
+        ],
+        "correct_answer": "Defining data structures"
+      },
+      {
+        "question": "In Kotlin, what is the purpose of the 'when' expression?",
+        "options": [
+          "It is used for defining classes",
+          "It is used for conditional branching based on values",
+          "It is used for defining extension functions",
+          "It is used for defining data classes"
+        ],
+        "correct_answer": "It is used for conditional branching based on values"
+      },{
+        "question": "What is the entry point of a Kotlin program?",
+        "options": [
+          "The 'main' function",
+          "The 'start' function",
+          "The 'begin' function",
+          "The 'init' function"
+        ],
+        "correct_answer": "The 'main' function"
+      },
+      {
+        "question": "Which keyword is used to declare a constant in Kotlin?",
+        "options": [
+          "var",
+          "val",
+          "const",
+          "final"
+        ],
+        "correct_answer": "val"
+      },
+      {
+        "question": "What is the purpose of the 'lateinit' modifier in Kotlin?",
+        "options": [
+          "To declare a variable that cannot be modified after initialization",
+          "To declare a variable that must be initialized immediately",
+          "To declare a variable that is initialized lazily",
+          "To declare a variable that cannot be null"
+        ],
+        "correct_answer": "To declare a variable that is initialized lazily"
+      },
+      {
+        "question": "Which of the following is NOT a basic data type in Kotlin?",
+        "options": [
+          "Int",
+          "String",
+          "Float",
+          "Array"
+        ],
+        "correct_answer": "Array"
+      },
+      {
+        "question": "In Kotlin, what is the purpose of the 'is' keyword?",
+        "options": [
+          "It is used to declare a new variable",
+          "It is used for type checking and casting",
+          "It is used to define loops",
+          "It is used for mathematical operations"
+        ],
+        "correct_answer": "It is used for type checking and casting"
+      }
+    ]
+  }
+
+ 
+  
+  
