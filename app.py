@@ -65,7 +65,17 @@ def get_quiz_by_topic_and_type():
             quiz_file_path = os.path.join(type_folder_path, quiz_files[0])
             with open(quiz_file_path, "r") as json_file:
                 quiz_data = json.load(json_file)
-            response_data["data"] = quiz_data
+            # Reformat the data to match the desired structure
+            quiz_list = []
+            for chapter_name, questions in quiz_data.items():
+                for question in questions:
+                    question_option = {
+                        "chaptername": chapter_name,
+                        "question": question
+                    }
+                    quiz_list.append(question_option)
+
+            response_data["data"] = quiz_list
         else:
             response_data["status"] = "error"
             response_data["message"] = "No quiz data found for the selected type"
