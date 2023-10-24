@@ -1,4 +1,15 @@
-Flask==2.0.2
-Flask-SQLAlchemy==2.5.1
-Flask-RESTful==0.3.10
-requests==2.26.0
+black
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+Flask
+flask-marshmallow
+Flask-RESTful
+Flask-SQLAlchemy
+marshmallow
+nltk
+pdfminer
+spacy
+SQLAlchemy
+flask_cors 
+flask_jwt_extended
+requests
+waitress
