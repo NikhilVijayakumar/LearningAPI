@@ -1,0 +1,235 @@
+{
+    "Chapter 1": [
+      {
+        "question": "What is the purpose of the 'sealed' modifier in Kotlin?",
+        "options": [
+          "It prevents a class from being inherited",
+          "It restricts the visibility of a class",
+          "It allows a class to be extended by other classes",
+          "It restricts the instantiation of a class"
+        ],
+        "correct_answer": "It prevents a class from being inherited"
+      },
+      {
+        "question": "In Kotlin, what is a higher-order function?",
+        "options": [
+          "A function that is implemented as an extension function",
+          "A function that operates on primitive data types",
+          "A function that takes one or more functions as parameters or returns a function",
+          "A function that has a higher complexity than other functions"
+        ],
+        "correct_answer": "A function that takes one or more functions as parameters or returns a function"
+      },
+      {
+        "question": "What is the purpose of the 'with' function in Kotlin?",
+        "options": [
+          "To create a new instance of a class",
+          "To define an extension function",
+          "To perform a series of operations on an object without repeating the object name",
+          "To create a copy of a data class object"
+        ],
+        "correct_answer": "To perform a series of operations on an object without repeating the object name"
+      },
+      {
+        "question": "What is a 'companion object' in Kotlin?",
+        "options": [
+          "A singleton object associated with a class",
+          "An object that is created using the 'object' keyword",
+          "An object used for inheritance",
+          "A subclass of the main class"
+        ],
+        "correct_answer": "A singleton object associated with a class"
+      },
+      {
+        "question": "In Kotlin, what is the purpose of the 'init' block in a class?",
+        "options": [
+          "To declare properties of a class",
+          "To initialize the primary constructor",
+          "To provide a secondary constructor",
+          "To perform additional initialization of a class"
+        ],
+        "correct_answer": "To perform additional initialization of a class"
+      },
+      {
+        "question": "Which keyword is used to create an extension function in Kotlin?",
+        "options": [
+          "fun",
+          "extend",
+          "extension",
+          "infix"
+        ],
+        "correct_answer": "fun"
+      },
+      {
+        "question": "What is the purpose of the 'tailrec' modifier in Kotlin?",
+        "options": [
+          "To indicate that a function is tail-recursive",
+          "To disable recursion in a function",
+          "To specify the number of tail calls in a recursive function",
+          "To define a recursive lambda function"
+        ],
+        "correct_answer": "To indicate that a function is tail-recursive"
+      },
+      {
+        "question": "What is the purpose of the 'by lazy' delegate in Kotlin?",
+        "options": [
+          "To delegate property access to another class",
+          "To initialize a property lazily, only when it's first accessed",
+          "To create a property that cannot be modified after initialization",
+          "To declare a property that can be accessed from Java code"
+        ],
+        "correct_answer": "To initialize a property lazily, only when it's first accessed"
+      },
+      {
+        "question": "What is the purpose of the 'infix' keyword in Kotlin?",
+        "options": [
+          "To define a higher-order function",
+          "To create an extension function",
+          "To allow calling a function using infix notation",
+          "To specify the type of a function parameter"
+        ],
+        "correct_answer": "To allow calling a function using infix notation"
+      },
+      {
+        "question": "What does the 'reified' modifier mean in Kotlin?",
+        "options": [
+          "It indicates that a function is recursive",
+          "It allows inlining of a function",
+          "It enables type information to be available at runtime for inline functions",
+          "It specifies that a function is a reentrant function"
+        ],
+        "correct_answer": "It enables type information to be available at runtime for inline functions"
+      },
+      {
+        "question": "In Kotlin, what is the purpose of the 'also' function?",
+        "options": [
+          "To filter elements in a collection",
+          "To apply a series of transformations to an object",
+          "To combine two strings",
+          "To perform additional operations on an object and return the object itself"
+        ],
+        "correct_answer": "To perform additional operations on an object and return the object itself"
+      },
+      {
+        "question": "What is the purpose of the 'init' function in a data class in Kotlin?",
+        "options": [
+          "To create a copy of the data class object",
+          "To perform additional initialization of the data class",
+          "To define primary constructor parameters",
+          "To declare properties of the data class"
+        ],
+        "correct_answer": "To perform additional initialization of the data class"
+      },
+      {
+        "question": "Which Kotlin function is used to transform a collection into a map?",
+        "options": [
+          "map",
+          "toMap",
+          "flatMap",
+          "filter"
+        ],
+        "correct_answer": "toMap"
+      },
+      {
+        "question": "What is the Kotlin 'let' function primarily used for?",
+        "options": [
+          "To perform null checks and safely call functions on nullable objects",
+          "To create lambda expressions",
+          "To transform a collection of objects",
+          "To define extension functions"
+        ],
+        "correct_answer": "To perform null checks and safely call functions on nullable objects"
+      },
+      {
+        "question": "What is the Kotlin 'apply' function primarily used for?",
+        "options": [
+          "To declare a class",
+          "To define a function",
+          "To apply a set of operations to an object and return it",
+          "To create lambda expressions"
+        ],
+        "correct_answer": "To apply a set of operations to an object and return it"
+      },
+      {
+        "question": "What is the purpose of the 'first' and 'last' functions in Kotlin collections?",
+        "options": [
+          "To access the first and last elements of a collection",
+          "To add elements to a collection",
+          "To filter elements based on a condition",
+          "To sort the collection in ascending order"
+        ],
+        "correct_answer": "To access the first and last elements of a collection"
+      },
+      {
+        "question": "Which of the following is NOT a built-in function in Kotlin's standard library?",
+        "options": [
+          "map",
+          "filter",
+          "foreach",
+          "zip"
+        ],
+        "correct_answer": "foreach"
+      },
+      {
+        "question": "In Kotlin, what is the purpose of the 'coroutine' keyword?",
+        "options": [
+          "To define a lambda function",
+          "To handle exceptions",
+          "To create a new thread",
+          "To simplify asynchronous programming and concurrency"
+        ],
+        "correct_answer": "To simplify asynchronous programming and concurrency"
+      },
+      {
+        "question": "What is the purpose of the 'repeat' function in Kotlin?",
+        "options": [
+          "To create a new collection by repeating its elements",
+          "To repeat a block of code a specified number of times",
+          "To filter elements in a collection",
+          "To apply a function to each element in a collection"
+        ],
+        "correct_answer": "To repeat a block of code a specified number of times"
+      },
+      {
+        "question": "In Kotlin, what is the purpose of the 'also' extension function?",
+        "options": [
+          "To transform a collection into a map",
+          "To perform additional operations on an object and return the object itself",
+          "To apply a series of transformations to an object",
+          "To create a copy of an object"
+        ],
+        "correct_answer": "To perform additional operations on an object and return the object itself"
+      },
+      {
+        "question": "What is the purpose of the 'tailrec' modifier in Kotlin?",
+        "options": [
+          "To create a tail-recursive function",
+          "To disable recursion in a function",
+          "To specify the number of tail calls in a recursive function",
+          "To prevent infinite loops in a recursive function"
+        ],
+        "correct_answer": "To create a tail-recursive function"
+      },
+      {
+        "question": "Which Kotlin function is used to transform a collection by applying a transformation function to each element?",
+        "options": [
+          "map",
+          "filter",
+          "forEach",
+          "flatmap"
+        ],
+        "correct_answer": "map"
+      },
+      {
+        "question": "What is the purpose of the 'repeat' function in Kotlin?",
+        "options": [
+          "To create a new collection by repeating its elements",
+          "To repeat a block of code a specified number of times",
+          "To filter elements in a collection",
+          "To apply a function to each element in a collection"
+        ],
+        "correct_answer": "To repeat a block of code a specified number of times"
+      }
+    ]
+  }
+  
