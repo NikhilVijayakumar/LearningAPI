@@ -3,12 +3,14 @@ from flask import request, jsonify, send_from_directory
 from waitress import serve
 import os
 import configparser
+from flask_jwt_extended import jwt_required, get_jwt_identity
 
 config = configparser.ConfigParser()
 config.read('config.cfg')
 quiz_data_path = config.get('App', 'QUIZ_DATA_PATH')
 
 class TopicsResource(Resource):
+    @jwt_required
     def get(self):
         response_data = {
             "status": "success",

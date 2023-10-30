@@ -5,12 +5,14 @@ from waitress import serve
 import os
 import json
 import configparser
+from flask_jwt_extended import jwt_required, get_jwt_identity
 
 config = configparser.ConfigParser()
 config.read('config.cfg')
 quiz_data_path = config.get('App', 'QUIZ_DATA_PATH')
 
 class QuizResource(Resource):
+    @jwt_required
     def post(self):
         selected_topic = request.json.get("topic")
         selected_type = request.json.get("type")
