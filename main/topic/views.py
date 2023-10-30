@@ -1,9 +1,16 @@
-from flask import Blueprint
-from main.topic.resources import TopicsResource, QuizResource
-from main import api
+# topic/views.py
 
-api_bp = Blueprint("api", __name__)
-api.add_resource(TopicsResource, "/api/v1/topics")
-api.add_resource(QuizResource, "/api/v1/quiz")
+from flask import Blueprint
+from flask_restful import Api
+from main.topic.resources import TopicsResource
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.cfg')
+
+bp = Blueprint(config.get('Modules', 'TOPIC'), __name__)
+api = Api(bp)
+
+api.add_resource(TopicsResource, config.get('API Paths', 'GET_TOPICS'))
 
 

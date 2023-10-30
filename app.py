@@ -1,6 +1,7 @@
 # app.py
 
-from main import app, db
+from config import app
+from db_schema import db
 from waitress import serve
 
 
