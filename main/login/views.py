@@ -1,6 +1,6 @@
 # login views.py
 from flask import Blueprint
-from flask_restful import Api
+from main import api as Api
 from main.login.resources  import LoginResource 
 import configparser
 

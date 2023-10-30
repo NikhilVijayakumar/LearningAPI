@@ -1,6 +1,5 @@
 # __init__.py
 
-
 from flask_restful import Api
 from config import app
 from flask_marshmallow import Marshmallow
@@ -11,14 +10,10 @@ from main.topic.views import bp as topic_bp
 from main.quiz.views import bp as quiz_bp
 from main.result.views import bp as result_bp
 
-
-
-
 # Initialize Flask extensions
 api = Api(app)
 ma = Marshmallow(app)
 jwt = JWTManager(app)
-
 
 # Register the file_bp blueprint
 app.register_blueprint(topic_bp)

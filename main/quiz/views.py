@@ -1,6 +1,6 @@
 # quiz/views.py
 from flask import Blueprint
-from flask_restful import Api
+from main import api as Api
 from main.quiz.resources import QuizResource 
 import configparser
 
