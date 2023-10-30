@@ -12,8 +12,10 @@ users_list_schema = UserListSchema(many=True)
 
 class UserResource(Resource):
     def get(self):
-        users = User.query.all()
-        return {"data": users_list_schema.dump(users)}
+        user = User.query.order_by(User.id.desc()).first()
+        user_schema = UserListSchema()
+        return {"data": user_schema.dump(user)}
+
 
 class ProtectedResource(Resource):
     @jwt_required()
