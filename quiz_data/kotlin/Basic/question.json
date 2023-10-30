@@ -1,0 +1,244 @@
+{
+  "Chapter 1": [
+    {
+      "question": "In Kotlin, what is the keyword used to declare a variable that can be modified after it is initialized?",
+      "options": [
+        "val",
+        "var",
+        "const",
+        "final"
+      ],
+      "correct_answer": "var"
+    },
+    {
+      "question": "Which of the following is true about Kotlin's type inference?",
+      "options": [
+        "It is mandatory to specify the data type of a variable.",
+        "It can automatically infer the data type of a variable.",
+        "Type inference is not supported in Kotlin.",
+        "Type inference can only be used for function parameters."
+      ],
+      "correct_answer": "It can automatically infer the data type of a variable."
+    },
+    {
+      "question": "In Kotlin, what is the keyword used to define a function?",
+      "options": [
+        "func",
+        "fun",
+        "function",
+        "def"
+      ],
+      "correct_answer": "fun"
+    },
+    {
+      "question": "What is the correct syntax for a single-line comment in Kotlin?",
+      "options": [
+        "// This is a comment",
+        "/* This is a comment */",
+        "-- This is a comment",
+        "# This is a comment"
+      ],
+      "correct_answer": "// This is a comment"
+    },
+    {
+      "question": "Which of the following is used to define a range of values in Kotlin?",
+      "options": [
+        "..",
+        "to",
+        "-",
+        ":"
+      ],
+      "correct_answer": "to"
+    },
+    {
+      "question": "In Kotlin, what is the purpose of the \"when\" expression?",
+      "options": [
+        "Loop through a list of items",
+        "Handle exceptions",
+        "Perform a series of checks and return a value",
+        "Create anonymous functions"
+      ],
+      "correct_answer": "Perform a series of checks and return a value"
+    },
+    {
+      "question": "What is the keyword used to create a class in Kotlin?",
+      "options": [
+        "struct",
+        "class",
+        "type",
+        "object"
+      ],
+      "correct_answer": "class"
+    },
+    {
+      "question": "Which of the following is a valid way to create a list in Kotlin?",
+      "options": [
+        "[1, 2, 3]",
+        "(1, 2, 3)",
+        "{1, 2, 3}",
+        "<1, 2, 3>"
+      ],
+      "correct_answer": "[1, 2, 3]"
+    },
+    {
+      "question": "In Kotlin, how do you define a nullable variable?",
+      "options": [
+        "int",
+        "String",
+        "Int?",
+        "nullable Int"
+      ],
+      "correct_answer": "Int?"
+    },
+    {
+      "question": "What is the purpose of the \"init\" block in a Kotlin class?",
+      "options": [
+        "To define properties of a class",
+        "To initialize the primary constructor",
+        "To provide a secondary constructor",
+        "To perform additional initialization of a class"
+      ],
+      "correct_answer": "To perform additional initialization of a class"
+    },
+    {
+      "question": "What is the result of the expression 5 / 2 in Kotlin?",
+      "options": [
+        "2.5",
+        "2",
+        "2.0",
+        "Error"
+      ],
+      "correct_answer": "2"
+    },
+    {
+      "question": "In Kotlin, which function is used to convert a string to an integer?",
+      "options": [
+        "str.toInt()",
+        "str.parseInt()",
+        "int.parseString()",
+        "int.fromStr()"
+      ],
+      "correct_answer": "str.toInt()"
+    },
+    {
+      "question": "Which of the following is an example of an infix function call in Kotlin?",
+      "options": [
+        "a.plus(b)",
+        "a add b",
+        "a.add(b)",
+        "a + b"
+      ],
+      "correct_answer": "a + b"
+    },
+    {
+      "question": "What is the purpose of the \"return\" keyword in a function in Kotlin?",
+      "options": [
+        "To terminate the program",
+        "To exit the current loop",
+        "To return a value from the function",
+        "To print a message to the console"
+      ],
+      "correct_answer": "To return a value from the function"
+    },
+    {
+      "question": "Which access modifier in Kotlin allows a member to be accessed only within the same package?",
+      "options": [
+        "private",
+        "internal",
+        "protected",
+        "public"
+      ],
+      "correct_answer": "internal"
+    },
+    {
+      "question": "What is the Kotlin convention for defining a constant (immutable) property?",
+      "options": [
+        "Using \"let\" keyword",
+        "Using \"const\" keyword",
+        "Using \"val\" keyword",
+        "Using \"var\" keyword"
+      ],
+      "correct_answer": "Using \"val\" keyword"
+    },
+    {
+      "question": "In Kotlin, what is a data class primarily used for?",
+      "options": [
+        "Creating singletons",
+        "Defining classes for data storage and manipulation",
+        "Creating abstract classes",
+        "Defining sealed classes"
+      ],
+      "correct_answer": "Defining classes for data storage and manipulation"
+    },
+    {
+      "question": "What is the purpose of the \"is\" keyword in Kotlin?",
+      "options": [
+        "It is used to declare a variable.",
+        "It is used to perform type checking.",
+        "It is used to define a function.",
+        "It is used to create a range."
+      ],
+      "correct_answer": "It is used to perform type checking."
+    },
+    {
+      "question": "Which of the following is NOT a valid Kotlin data type?",
+      "options": [
+        "Double",
+        "Float",
+        "Decimal",
+        "Char"
+      ],
+      "correct_answer": "Decimal"
+    },
+    {
+      "question": "In Kotlin, what is the Elvis operator used for?",
+      "options": [
+        "Bitwise operations",
+        "Null safety",
+        "Type casting",
+        "String manipulation"
+      ],
+      "correct_answer": "Null safety"
+    },
+    {
+      "question": "What is the purpose of the \"sealed\" modifier in Kotlin?",
+      "options": [
+        "It prevents a class from being inherited.",
+        "It restricts the visibility of a class.",
+        "It allows a class to be extended by other classes.",
+        "It restricts the instantiation of a class."
+      ],
+      "correct_answer": "It prevents a class from being inherited."
+    },
+    {
+      "question": "What is the default visibility modifier for a class in Kotlin if no modifier is specified?",
+      "options": [
+        "private",
+        "internal",
+        "protected",
+        "public"
+      ],
+      "correct_answer": "public"
+    },
+    {
+      "question": "Which of the following is used to create a copy of an existing data class object with some property changes?",
+      "options": [
+        "clone()",
+        "copy()",
+        "modify()",
+        "replace()"
+      ],
+      "correct_answer": "copy()"
+    },
+    {
+      "question": "What is the purpose of the \"apply\" function in Kotlin?",
+      "options": [
+        "To declare a class",
+        "To perform a transformation on a collection",
+        "To apply a set of operations to an object and return it",
+        "To define a lambda function"
+      ],
+      "correct_answer": "To apply a set of operations to an object and return it"
+    }
+  ]
+}

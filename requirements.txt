@@ -1,4 +1,12 @@
-Flask==2.0.2
-Flask-SQLAlchemy==2.5.1
-Flask-RESTful==0.3.10
-requests==2.26.0
+black
+Flask
+flask-marshmallow
+Flask-RESTful
+Flask-SQLAlchemy
+marshmallow
+SQLAlchemy
+marshmallow-sqlalchemy
+flask_cors 
+flask_jwt_extended
+requests
+waitress
