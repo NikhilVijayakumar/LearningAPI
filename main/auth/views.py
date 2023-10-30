@@ -4,5 +4,5 @@ from main import api
 
 
 auth_bp = Blueprint("auth", __name__)
-api.add_resource(LoginResource, "/auth/login")
-api.add_resource(RegistrationResource, "/auth/register")
+api.add_resource(LoginResource, "/api/v1/login")
+api.add_resource(RegistrationResource, "/api/v1/register")
