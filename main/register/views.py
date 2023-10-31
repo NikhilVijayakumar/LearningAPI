@@ -1,6 +1,6 @@
 # quiz/views.py
 from flask import Blueprint
-from main import api as Api
+from config import app,api
 from main.register.resources import RegistrationResource 
 import configparser
 
@@ -8,7 +8,7 @@ config = configparser.ConfigParser()
 config.read('config.cfg')
 
 bp = Blueprint(config.get('Modules', 'REGISTER'), __name__)
-api = Api(bp)
+app.register_blueprint(bp)
 
 api.add_resource(RegistrationResource, config.get('API Paths', 'REGISTER'))
 
