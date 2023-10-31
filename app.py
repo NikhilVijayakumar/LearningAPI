@@ -1,9 +1,10 @@
 # app.py
 
-from config import app
-from db_schema import db
+from config import ConfigSingleton
 from waitress import serve
 
+app = ConfigSingleton.get_app()
+db = ConfigSingleton.get_db()
 
 if __name__ == "__main__":
     with app.app_context():

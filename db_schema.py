@@ -1,6 +1,6 @@
-from config import app
+from config import ConfigSingleton
 from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy(app)
+db = ConfigSingleton.get_db()
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
