@@ -25,11 +25,16 @@ jwt = JWTManager(app)
 
 # Import and register blueprints
 from main.user.views import user_bp
-from main.auth.views import auth_bp
-from main.topic.views import api_bp
+from main.login.views import login_bp
+from main.registration.views import register_bp
+from main.topic.views import topic_bp
+from main.quiz.views import quiz_bp
+from main.result.views import result_bp
 
 # Register the file_bp blueprint
 app.register_blueprint(user_bp)
-app.register_blueprint(auth_bp)
-app.register_blueprint(api_bp)
-
+app.register_blueprint(login_bp)
+app.register_blueprint(register_bp)
+app.register_blueprint(topic_bp)
+app.register_blueprint(quiz_bp)
+app.register_blueprint(result_bp)
