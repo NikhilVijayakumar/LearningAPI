@@ -6,7 +6,7 @@ from marshmallow import Schema, fields
 
 class UserListSchema(UserSchema):
     class Meta:
-        fields = ("userName", "email")
+        fields = ("userName", "email","password")
 
 users_list_schema = UserListSchema(many=True)
 
