@@ -21,7 +21,7 @@ class RegistrationResource(Resource):
         email = args["email"]
         password = args["password"]
 
-        if User.query.filter_by(userName=userName).first():
+        if User.query.filter_by(user_name=userName).first():
             return {"message": "userName already exists."}, 400
 
         if User.query.filter_by(email=email).first():
@@ -33,7 +33,7 @@ class RegistrationResource(Resource):
         if not self.is_valid_password(password):
             return {"message": "Invalid password format."}, 400
 
-        user = User(userName=userName, email=email, password=password)
+        user = User(user_name=userName, email=email, password=password)
         db.session.add(user)
         db.session.commit()
 
@@ -69,4 +69,4 @@ class LoginResource(Resource):
             return {"message": "Invalid credentials."}, 401
 
         access_token = create_access_token(identity=user.id,expires_delta=False)
-        return {"data":{"user": {"token": access_token, "userName" : user.userName , "email" : user.email}}}, 200
+        return {"data":{"user": {"token": access_token, "userName" : user.user_name , "email" : user.email}}}, 200

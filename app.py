@@ -131,6 +131,29 @@ def save_results():
     db.session.commit()
     return jsonify({"message": "Quiz Result saved successfully"}), 201
 
+@app.route('/api/v1/reset',endpoint='reset', methods=['GET'])
+def reset():
+    try:        
+        db.session.query(User).delete()
+        db.session.query(QuizResult).delete()
+        db.session.query(ChapterResult).delete()      
+        db.session.commit()
+        return jsonify({"message": "Skill Sage reset successfully"})
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"message": "Failed to reset the Skill Sage", "error": str(e)})
+    
+@app.route('/api/v1/reset/quiz',endpoint='reset_quiz', methods=['GET'])
+def reset_quiz():
+    try:  
+        db.session.query(QuizResult).delete()
+        db.session.query(ChapterResult).delete()      
+        db.session.commit()
+        return jsonify({"message": "quiz reset successfully"})
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"message": "Failed to reset the quiz", "error": str(e)})
+
 
 if __name__ == "__main__":
     with app.app_context():
