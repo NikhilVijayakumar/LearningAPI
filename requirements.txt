@@ -1,12 +1,11 @@
-black
-Flask
-flask-marshmallow
-Flask-RESTful
-Flask-SQLAlchemy
-marshmallow
-SQLAlchemy
-marshmallow-sqlalchemy
-flask_cors 
-flask_jwt_extended
-requests
-waitress
+Flask ==3.0.0
+flask-marshmallow == 0.15.0
+Flask-RESTful == 0.3.9
+Flask-SQLAlchemy == 3.1.1
+marshmallow == 3.20.1
+SQLAlchemy == 2.0.23
+marshmallow-sqlalchemy == 0.29.0
+flask_cors == 4.0.0
+flask_jwt_extended == 4.5.3
+requests == 2.31.0
+waitress == 2.1.2
