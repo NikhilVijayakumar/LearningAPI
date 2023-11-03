@@ -15,6 +15,8 @@ class QuizResult(db.Model):
     quiz_id = db.Column(db.String(255), nullable=False,unique=True)
     topic = db.Column(db.String(255), nullable=False)
     type = db.Column(db.String(255), nullable=False)
+    totalQuestions = db.Column(db.Integer)
+    correctAnswers = db.Column(db.Integer)
 
 class ChapterResult(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -62,8 +64,10 @@ def save_results():
     topic = data["data"]["topic"]
     exam_type = data["data"]["type"]
     chapter_results = data["data"]["chapterResults"]
+    totalQuestions=data["data"]["totalQuestions"]
+    correctAnswers=data["data"]["correctAnswers"]
     quiz_id = str(uuid.uuid4())
-    quiz_result = QuizResult(user_id=user.id,quiz_id=quiz_id, topic=topic, type=exam_type)
+    quiz_result = QuizResult(user_id=user.id,quiz_id=quiz_id, topic=topic, type=exam_type,totalQuestions=totalQuestions,correctAnswers=correctAnswers)
     db.session.add(quiz_result)
 
     for chapter_result_data in chapter_results:
@@ -76,7 +80,6 @@ def save_results():
         db.session.add(chapter_result)
 
     db.session.commit()
-
     return jsonify({"data": {"topic": topic, "type": exam_type, "chapterResults": chapter_results}}), 201
 
 
