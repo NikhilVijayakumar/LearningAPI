@@ -1,86 +1,161 @@
+# app.py
+
+from main import app, db
+from waitress import serve
 import os
 import json
 from flask import Flask, jsonify, request, abort, send_from_directory
-from waitress import serve
-from flask_cors import CORS
+from flask_jwt_extended import jwt_required, get_jwt_identity
+from main.user.models import User
+import uuid
 
-app = Flask(__name__)
-CORS(app)
+class QuizResult(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    quiz_id = db.Column(db.String(255), nullable=False,unique=True)
+    topic = db.Column(db.String(255), nullable=False)
+    type = db.Column(db.String(255), nullable=False)
+    total_questions = db.Column(db.Integer)
+    correct_answers = db.Column(db.Integer)
 
-# Define the path to the quiz_data folder
-quiz_data_path = "quiz_data"
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'userId': self.user_id,
+            'quizId': self.quiz_id,
+            'topic': self.topic,
+            'type': self.type,
+            'totalQuestions': self.total_questions,
+            'correctAnswers': self.correct_answers,
+        }
 
-@app.route("/api/v1/topics", methods=["GET"])
-def list_topics_and_types():
-    response_data = {
-        "status": "success",
-        "data": None
-    }
+class ChapterResult(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    quiz_result_id = db.Column(db.String(255), db.ForeignKey("quiz_result.quiz_id"), nullable=False)
+    chapter_name = db.Column(db.String(255))
+    total_questions = db.Column(db.Integer)
+    correct_answers = db.Column(db.Integer)
 
-    topics = []
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'quizResultId': self.quiz_result_id,
+            'chapterName': self.chapter_name,
+            'totalQuestions': self.total_questions,
+            'correctAnswers': self.correct_answers,
+        }
 
-    # Iterate through the folders in the quiz_data directory
-    for topic_folder in os.listdir(quiz_data_path):
-        if os.path.isdir(os.path.join(quiz_data_path, topic_folder)):
-            # List subdirectories (quiz types) inside each topic folder
-            quiz_types = []
-            topic_folder_path = os.path.join(quiz_data_path, topic_folder)
-            for quiz_type_folder in os.listdir(topic_folder_path):
-                if os.path.isdir(os.path.join(topic_folder_path, quiz_type_folder)):
-                    quiz_types.append(quiz_type_folder)
+@app.route("/api/v1/results", endpoint='get_quiz_results', methods=["GET"])
+@jwt_required()
+def get_quiz_results():
+    topic = request.args.get("topic")
+    exam_type = request.args.get("type")
+    user_id = request.args.get("userId")
 
-            # Add the topic and associated quiz types to the result
-            topics.append({"name": topic_folder, "types": quiz_types})
+    current_user_id = get_jwt_identity()
+    user = User.query.get(current_user_id)
 
-    if topics:
-        response_data["data"] = {"topics": topics}
+    if not user and not user_id:
+        return jsonify({"message": "User not found"}), 404
+
+    if user_id:
+        user = User.query.get(user_id)
+    
+    
+
+    if topic and exam_type:
+        quiz_result = QuizResult.query.filter_by(user_id=user.id, topic=topic, type=exam_type).all()
+    elif topic:
+        quiz_result = QuizResult.query.filter_by(user_id=user.id, topic=topic).all()
+    elif exam_type:
+        quiz_result = QuizResult.query.filter_by(user_id=user.id, type=exam_type).all()
     else:
-        response_data["data"] = None
+        quiz_result = QuizResult.query.filter_by(user_id=user.id).all()
+    
 
-    return jsonify(response_data)
+    if not quiz_result:
+        return jsonify({"message": "QuizResult not found for user "}), 404
+
+    quiz_data = []
+
+    for result in quiz_result:
+        result_data = []
+        chapter_results_list = ChapterResult.query.filter_by(quiz_result_id=result.quiz_id).all()
+        chapter_results_data = [chapter_result.to_dict() for chapter_result in chapter_results_list]
+        if not chapter_results_data:
+            return jsonify({"message": "ChapterResult not found"}), 404
+
+        result_data.append({
+            "topic": result.topic,
+            "type": result.type,
+            "totalQuestions": result.total_questions,
+            "correctAnswers": result.correct_answers,
+            "chapterResults": chapter_results_data
+        })
+        quiz_data.append({
+            "quizId": result.quiz_id,
+            "data": result_data
+        })
+
+    return jsonify({"quiz": quiz_data})
 
 
-@app.route("/api/v1/quiz", methods=["POST"])
-def get_quiz_by_topic_and_type():
-    selected_topic = request.json.get("topic")
-    selected_type = request.json.get("type")
 
-    response_data = {
-        "status": "success",
-        "data": None
-    }
+@app.route('/api/v1/results', endpoint='save_results', methods=['POST']) 
+@jwt_required()
+def save_results():
+    data = request.get_json()   
+    current_user_id = get_jwt_identity()
+    user = User.query.get(current_user_id)      
+    if data is None:
+        return jsonify({"message": "Invalid JSON data format"}), 400
+        
+    topic = data["data"]["topic"]
+    exam_type = data["data"]["type"]
+    chapter_results = data["data"]["chapterResults"]
+    total_questions=data["data"]["totalQuestions"]
+    correct_answers=data["data"]["correctAnswers"]
+    quiz_id = str(uuid.uuid4())
+    quiz_result = QuizResult(user_id=user.id,quiz_id=quiz_id, topic=topic, type=exam_type,total_questions=total_questions,correct_answers=correct_answers)
+    db.session.add(quiz_result)
 
-    # Verify that the selected topic and type exist
-    topic_folder_path = os.path.join(quiz_data_path, selected_topic)
-    type_folder_path = os.path.join(topic_folder_path, selected_type)
+    for chapter_result_data in chapter_results:
+        chapter_result = ChapterResult(
+            quiz_result_id=quiz_id,
+            chapter_name=chapter_result_data.get("chapterName"),
+            total_questions=chapter_result_data.get("totalQuestions"),
+            correct_answers=chapter_result_data.get("correctAnswers")
+        )
+        db.session.add(chapter_result)
 
-    if not os.path.isdir(topic_folder_path) or not os.path.isdir(type_folder_path):
-        response_data["status"] = "error"
-        response_data["message"] = "Topic or type not found"
-    else:
-        # List JSON files in the selected type folder
-        quiz_files = [f for f in os.listdir(type_folder_path) if f.endswith(".json")]
+    db.session.commit()
+    return jsonify({"message": "Quiz Result saved successfully"}), 201
 
-        if quiz_files:
-            quiz_file_path = os.path.join(type_folder_path, quiz_files[0])
-            with open(quiz_file_path, "r") as json_file:
-                quiz_data = json.load(json_file)
-            # Reformat the data to match the desired structure
-            quiz_list = []
-            for chapter_name, questions in quiz_data.items():
-                for question in questions:
-                    question_option = {
-                        "chaptername": chapter_name,
-                        "question": question
-                    }
-                    quiz_list.append(question_option)
+@app.route('/api/v1/reset',endpoint='reset', methods=['GET'])
+def reset():
+    try:        
+        db.session.query(User).delete()
+        db.session.query(QuizResult).delete()
+        db.session.query(ChapterResult).delete()      
+        db.session.commit()
+        return jsonify({"message": "Skill Sage reset successfully"})
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"message": "Failed to reset the Skill Sage", "error": str(e)})
+    
+@app.route('/api/v1/reset/quiz',endpoint='reset_quiz', methods=['GET'])
+def reset_quiz():
+    try:  
+        db.session.query(QuizResult).delete()
+        db.session.query(ChapterResult).delete()      
+        db.session.commit()
+        return jsonify({"message": "quiz reset successfully"})
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"message": "Failed to reset the quiz", "error": str(e)})
 
-            response_data["data"] = quiz_list
-        else:
-            response_data["status"] = "error"
-            response_data["message"] = "No quiz data found for the selected type"
 
-    return jsonify(response_data)
-
-if __name__ == "__main__":    
+if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
     serve(app, host="0.0.0.0", port=5000)
