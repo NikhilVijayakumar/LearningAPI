@@ -11,7 +11,7 @@ from flask_cors import CORS
 # Create Flask app instance
 app = Flask(__name__)
 CORS(app)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://SkillSage:Apiskillsage#123@172.28.0.2:5432/Skillsage_db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = "your_secret_key"
 
