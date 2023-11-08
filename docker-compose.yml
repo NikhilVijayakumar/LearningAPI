@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: Apiskillsage#123
       POSTGRES_DB: Skillsage_db
     ports:
-      - '5433:5432'
+      - '5432:5432'
     networks:
       skillsage-network:
         ipv4_address: 172.28.0.2
