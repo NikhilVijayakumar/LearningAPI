@@ -10,8 +10,8 @@ from main.user.schemas import UserListSchema
 
 class UserResource(Resource):
     def get(self):
-        user = User.query.order_by(User.id.desc())
-        user_schema = UserListSchema(many=True)
+        user = User.query.order_by(User.id.desc()).first()
+        user_schema = UserListSchema()
         return {"data": user_schema.dump(user)}
 
 
