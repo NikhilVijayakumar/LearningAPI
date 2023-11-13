@@ -1,0 +1,509 @@
+{
+    "History of Python": [
+      {
+        "question": "Who is the creator of the Python programming language?",
+        "options": [
+          "Mark Zuckerberg",
+          "Guido van Rossum",
+          "Bill Gates",
+          "Linus Torvalds"
+        ],
+        "correct_answer": "Guido van Rossum"
+      },
+      {
+        "question": "In which year was the first official release of Python?",
+        "options": [
+          "1989",
+          "1991",
+          "1995",
+          "2000"
+        ],
+        "correct_answer": "1991"
+      },
+      {
+        "question": "What is the significance of the name 'Python' for the programming language?",
+        "options": [
+          "It is named after a snake species found in Africa.",
+          "It is an acronym for 'Programming Your Own Technology.'",
+          "It is named after the British comedy group 'Monty Python.'",
+          "It represents the quick and agile nature of the language."
+        ],
+        "correct_answer": "It is named after the British comedy group 'Monty Python.'"
+      },
+      {
+        "question": "Python 2 and Python 3 are two major versions of the language. When did Python 2 reach its end of life, signaling the end of official support?",
+        "options": [
+          "2015",
+          "2018",
+          "2020",
+          "Python 2 is still actively supported"
+        ],
+        "correct_answer": "2020"
+      },
+      {
+        "question": "Which of the following statements about Python's syntax is true?",
+        "options": [
+          "Python uses braces {} to indicate code blocks.",
+          "Python uses indentation to define blocks of code.",
+          "Python uses semicolons ; to end statements.",
+          "Python does not support functions."
+        ],
+        "correct_answer": "Python uses indentation to define blocks of code."
+      }
+    ],
+
+    "Python Variables": [
+        {
+            "question": "What is the purpose of a variable in Python?",
+            "options": [
+              "To store data temporarily during program execution.",
+              "To perform mathematical operations.",
+              "To define functions.",
+              "To create loops."
+            ],
+            "correct_answer": "To store data temporarily during program execution."
+          },
+          {
+            "question": "Which of the following is a valid Python variable name?",
+            "options": [
+              "2variable",
+              "_myVar",
+              "my-Var",
+              "global"
+            ],
+            "correct_answer": "_myVar"
+          },
+          {
+            "question": "How can you assign multiple values to multiple variables in a single line in Python?",
+            "options": [
+              "Using the assign keyword.",
+              "Separating values with commas.",
+              "Enclosing values in square brackets.",
+              "Assigning each variable individually."
+            ],
+            "correct_answer": "Separating values with commas."
+          },
+          {
+            "question": "What will be the output of the following code?\n\n```python\nx = 5\ny = 'Hello'\nprint(x, y)\n```",
+            "options": [
+              "5 'Hello'",
+              "x y",
+              "Error: Incompatible types",
+              "Hello 5"
+            ],
+            "correct_answer": "5 'Hello'"
+          },
+          {
+            "question": "What is a global variable in Python?",
+            "options": [
+              "A variable declared inside a function.",
+              "A variable accessible only within a specific module.",
+              "A variable defined outside any function and can be accessed throughout the program.",
+              "A variable with a global scope."
+            ],
+            "correct_answer": "A variable defined outside any function and can be accessed throughout the program."
+          }
+        ],
+
+  "Python Data Types": [
+    {
+      "question": "What is the data type of the variable 'x' in Python if it is assigned the value 42?",
+      "options": [
+        "int",
+        "float",
+        "str",
+        "bool"
+      ],
+      "correct_answer": "int"
+    },
+    {
+      "question": "Which of the following is a built-in data type in Python?",
+      "options": [
+        "List",
+        "Tuple",
+        "Dictionary",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above"
+    },
+    {
+      "question": "How do you get the data type of a variable 'y' in Python?",
+      "options": [
+        "type(y)",
+        "get_type(y)",
+        "typeof(y)",
+        "datatype(y)"
+      ],
+      "correct_answer": "type(y)"
+    },
+    {
+      "question": "In Python, how can you set the data type of a variable 'z' to be an integer explicitly?",
+      "options": [
+        "z = int(z)",
+        "z.set_type(int)",
+        "z.type = int",
+        "z.setType(int)"
+      ],
+      "correct_answer": "z = int(z)"
+    },
+    {
+      "question": "Which of the following is a valid way to represent a floating-point number in Python?",
+      "options": [
+        "42",
+        "42.0",
+        "'42.0'",
+        "42f"
+      ],
+      "correct_answer": "42.0"
+    },
+    {
+      "question": "What is the data type of the result of the expression 3 + 4j in Python?",
+      "options": [
+        "int",
+        "float",
+        "complex",
+        "str"
+      ],
+      "correct_answer": "complex"
+    },
+    {
+      "question": "What is type conversion in Python?",
+      "options": [
+        "Converting text to numbers",
+        "Converting between different data types",
+        "Converting code to comments",
+        "Converting images to text"
+      ],
+      "correct_answer": "Converting between different data types"
+    },
+    {
+      "question": "In Python, what is the boolean value of the expression 5 > 3?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "correct_answer": "True"
+    },
+    {
+      "question": "Can functions in Python return boolean values?",
+      "options": [
+        "Yes",
+        "No",
+        "Only if explicitly specified",
+        "Depends on the function's implementation"
+      ],
+      "correct_answer": "Yes"
+    }
+  ],
+
+"Python Strings": [
+    {
+      "question": "How do you assign a string to a variable in Python?",
+      "options": [
+        "string = 'Hello World'",
+        "string: 'Hello World'",
+        "string <- 'Hello World'",
+        "string => 'Hello World'"
+      ],
+      "correct_answer": "string = 'Hello World'"
+    },
+    {
+      "question": "What is the syntax for creating a multiline string in Python?",
+      "options": [
+        "multiline_string = 'Line 1 \n Line 2'",
+        "multiline_string = '''Line 1 \n Line 2'''",
+        "multiline_string = 'Line 1' + \n + 'Line 2'",
+        "multiline_string = 'Line 1' \r 'Line 2'"
+      ],
+      "correct_answer": "multiline_string = '''Line 1 \n Line 2'''"
+    },
+    {
+      "question": "How do you slice a string in Python from the start to a specific index?",
+      "options": [
+        "string[0:index]",
+        "string[:index]",
+        "string[start:index]",
+        "string[start:]"
+      ],
+      "correct_answer": "string[:index]"
+    },
+    {
+      "question": "What is the correct way to use negative indexing to slice a string in Python?",
+      "options": [
+        "string[-start:-end]",
+        "string[-start:]",
+        "string[:-end]",
+        "string[start:-end]"
+      ],
+      "correct_answer": "string[-start:-end]"
+    },
+    {
+      "question": "Which method is used to convert a string to uppercase in Python?",
+      "options": [
+        "string.upper()",
+        "string.toUpper()",
+        "string.upperCase()",
+        "string.toCase('upper')"
+      ],
+      "correct_answer": "string.upper()"
+    },
+    {
+      "question": "How do you remove whitespace from both ends of a string in Python?",
+      "options": [
+        "string.strip()",
+        "string.trim()",
+        "string.removeWhitespace()",
+        "string.clearWhitespace()"
+      ],
+      "correct_answer": "string.strip()"
+    },
+    {
+      "question": "What method is used to replace a substring within a string in Python?",
+      "options": [
+        "string.replace()",
+        "string.substitute()",
+        "string.swap()",
+        "string.update()"
+      ],
+      "correct_answer": "string.replace()"
+    },
+    {
+      "question": "Which function is used to split a string into a list of substrings based on a delimiter?",
+      "options": [
+        "string.split()",
+        "string.break()",
+        "string.divide()",
+        "string.explode()"
+      ],
+      "correct_answer": "string.split()"
+    },
+    {
+      "question": "How do you concatenate two strings in Python?",
+      "options": [
+        "string.combine()",
+        "string.join()",
+        "string.concat()",
+        "string1 + string2"
+      ],
+      "correct_answer": "string1 + string2"
+    },
+    {
+      "question": "What does the escape character '\\' allow you to do in a string?",
+      "options": [
+        "Escape a character within a string",
+        "Create a new line",
+        "Insert a tab",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above"
+    },
+    {
+      "question": "How can you check if a string contains a specific substring in Python?",
+      "options": [
+        "string.contains(substring)",
+        "substring in string",
+        "string.includes(substring)",
+        "string.find(substring)"
+      ],
+      "correct_answer": "substring in string"
+    },
+    {
+      "question": "What method is used to convert a string to lowercase in Python?",
+      "options": [
+        "string.toLower()",
+        "string.lowerCase()",
+        "string.lower()",
+        "string.case('lower')"
+      ],
+      "correct_answer": "string.lower()"
+    },
+    {
+      "question": "How do you get the length of a string in Python?",
+      "options": [
+        "string.length()",
+        "len(string)",
+        "string.size()",
+        "string.count()"
+      ],
+      "correct_answer": "len(string)"
+    },
+    {
+      "question": "In slicing a string in Python, what does a colon (:) represent?",
+      "options": [
+        "The start index",
+        "The end index",
+        "A delimiter",
+        "Both start and end indices"
+      ],
+      "correct_answer": "Both start and end indices"
+    },
+    {
+      "question": "What method is used to capitalize the first letter of a string in Python?",
+      "options": [
+        "string.capital()",
+        "string.capitalize()",
+        "string.firstUpper()",
+        "string.startCase()"
+      ],
+      "correct_answer": "string.capitalize()"
+    },
+    {
+      "question": "How do you check if a string starts with a specific substring in Python?",
+      "options": [
+        "string.startsWith(substring)",
+        "substring == string[:len(substring)]",
+        "string.beginsWith(substring)",
+        "substring.inStart(string)"
+      ],
+      "correct_answer": "substring == string[:len(substring)]"
+    },
+    {
+      "question": "Which method is used to find the index of the first occurrence of a substring in a string?",
+      "options": [
+        "string.index(substring)",
+        "string.find(substring)",
+        "string.search(substring)",
+        "string.locate(substring)"
+      ],
+      "correct_answer": "string.find(substring)"
+    },
+    {
+      "question": "How can you reverse a string in Python?",
+      "options": [
+        "string.reverse()",
+        "reversed(string)",
+        "string.flip()",
+        "string[::-1]"
+      ],
+      "correct_answer": "string[::-1]"
+    },
+    {
+      "question": "What method is used to check if all characters in a string are alphanumeric?",
+      "options": [
+        "string.isAlnum()",
+        "string.checkAlnum()",
+        "string.alphanumeric()",
+        "string.isAlphaNumeric()"
+      ],
+      "correct_answer": "string.isalnum()"
+    },
+    {
+      "question": "How do you check if all characters in a string are numeric in Python?",
+      "options": [
+        "string.isNumeric()",
+        "string.checkNumeric()",
+        "string.numeric()",
+        "string.isdigit()"
+      ],
+      "correct_answer": "string.isdigit()"
+    },
+    {
+      "question": "What is the purpose of the `r` prefix in front of a string in Python?",
+      "options": [
+        "It indicates a regular expression.",
+        "It stands for 'raw' and disables escape characters.",
+        "It represents a reversed string.",
+        "It is a syntax error."
+      ],
+      "correct_answer": "It stands for 'raw' and disables escape characters."
+    },
+    {
+      "question": "How do you remove a specific character from a string in Python?",
+      "options": [
+        "string.remove(char)",
+        "string.replace(char, '')",
+        "string.delete(char)",
+        "string.trim(char)"
+      ],
+      "correct_answer": "string.replace(char, '')"
+    }
+  ],
+  "Python Operators": [
+    {
+        "question": "What is the result of the expression 15 + 7?",
+        "options": ["22", "105", "8", "92"],
+        "correct_answer": "22"
+      },
+      {
+        "question": "Which operator is used for exponentiation in Python?",
+        "options": ["^", "**", "*", "//"],
+        "correct_answer": "**"
+      },
+      {
+        "question": "What does the '+= 'operator do in Python?",
+        "options": ["Subtraction", "Addition", "Multiplication", "Division"],
+        "correct_answer": "Addition"
+      },
+      {
+        "question": "Which of the following is a comparison operator in Python?",
+        "options": [">>", "<=", "!=", "=="],
+        "correct_answer": "=="
+      },
+      {
+        "question": "What is the result of the expression 10 / 3 in Python?",
+        "options": ["3.3333", "3", "3.0", "4"],
+        "correct_answer": "3.3333"
+      },
+      {
+        "question": "Which logical operator represents 'logical AND' in Python?",
+        "options": ["&&", "and", "&", "||"],
+        "correct_answer": "and"
+      },
+      {
+        "question": "What does the 'is' operator check for in Python?",
+        "options": ["Equality of values", "Identity of objects", "Membership in a list", "Division"],
+        "correct_answer": "Identity of objects"
+      },
+      {
+        "question": "What is the purpose of the 'in' operator in Python?",
+        "options": ["Bitwise operations", "Membership test", "Logical OR", "Exponentiation"],
+        "correct_answer": "Membership test"
+      },
+      {
+        "question": "Which of the following is a bitwise operator in Python?",
+        "options": ["&", "not", "or", "and"],
+        "correct_answer": "&"
+      },
+      {
+        "question": "What does the '>>' operator do in Python?",
+        "options": ["Right shift", "Left shift", "Bitwise AND", "Bitwise OR"],
+        "correct_answer": "Right shift"
+      },
+      {
+        "question": "Which operator is used for floor division in Python?",
+        "options": ["/", "//", "%", "div"],
+        "correct_answer": "//"
+      },
+      {
+        "question": "What is the result of the expression 5 < 7?",
+        "options": ["True", "False", "None", "Error"],
+        "correct_answer": "True"
+      },
+      {
+        "question": "What is the result of the expression 4 != 4?",
+        "options": ["True", "False", "None", "Error"],
+        "correct_answer": "False"
+      },
+      {
+        "question": "Which of the following is an identity operator in Python?",
+        "options": ["is", "==", "!=", "and"],
+        "correct_answer": "is"
+      },
+      {
+        "question": "What does the 'not in' operator check for in Python?",
+        "options": ["Bitwise NOT", "Membership test", "Logical OR", "Exponentiation"],
+        "correct_answer": "Membership test"
+      },
+      {
+        "question": "Which operator is used for bitwise XOR in Python?",
+        "options": ["^", "&", "|", "<<"],
+        "correct_answer": "^"
+      }
+  ]
+}
+
+      
+
+  
