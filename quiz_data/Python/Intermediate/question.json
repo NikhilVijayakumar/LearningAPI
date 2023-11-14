@@ -1,0 +1,516 @@
+{
+    "Python List Operations": [
+      {
+        "question": "How do you access the second element in a list?",
+        "options": ["list[1]", "list[2]", "list(2)", "list.second()"],
+        "correct_answer": "list[1]"
+      },
+      {
+        "question": "What is the correct way to access the last element of a list?",
+        "options": ["list[-1]", "list[last]", "list[end]", "list[len(list)]"],
+        "correct_answer": "list[-1]"
+      },
+      {
+        "question": "How can you get a sublist from index 2 to 5 in a list?",
+        "options": ["list[2:6]", "list[2,5]", "list[2][5]", "list(2:5)"],
+        "correct_answer": "list[2:6]"
+      },
+      {
+        "question": "What is the result of `list[-3:-1]`?",
+        "options": ["[-3, -1]", "[-2, -1]", "[3, 1]", "[1, 3]"],
+        "correct_answer": "[-3, -1]"
+      },
+      {
+        "question": "How do you change the value of the third element in a list?",
+        "options": ["list[2] = value", "list.change(2, value)", "list.set(2, value)", "list.modify(2, value)"],
+        "correct_answer": "list[2] = value"
+      },
+      {
+        "question": "Which method is used to add an element to the end of a list?",
+        "options": ["append()", "add()", "insert()", "extend()"],
+        "correct_answer": "append()"
+      },
+      {
+        "question": "What is the correct way to remove an element at index 3 from a list?",
+        "options": ["remove(3)", "delete(3)", "pop(3)", "list.remove(3)"],
+        "correct_answer": "pop(3)"
+      },
+      {
+        "question": "What is the output of the following code?\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n  print(fruit)\n```",
+        "options": ["apple\nbanana\ncherry", "['apple', 'banana', 'cherry']", "0\n1\n2", "Error"],
+        "correct_answer": "apple\nbanana\ncherry"
+      },
+      {
+        "question": "Which statement creates a list comprehension that squares each element in a given list?",
+        "options": ["[x^2 for x in list]", "[x * x for x in list]", "[x^2 | x in list]", "(x^2) for x in list"],
+        "correct_answer": "[x * x for x in list]"
+      },
+      {
+        "question": "How do you sort a list in ascending order?",
+        "options": ["sort()", "sorted()", "order()", "arrange()"],
+        "correct_answer": "sorted()"
+      },
+      {
+        "question": "What is the correct way to copy a list?",
+        "options": ["copy()", "clone()", "duplicate()", "list.copy()"],
+        "correct_answer": "copy()"
+      },
+      {
+        "question": "What does the `join()` method do in Python?",
+        "options": ["Combines two lists", "Concatenates strings", "Merges dictionaries", "Joins elements of a list into a string"],
+        "correct_answer": "Joins elements of a list into a string"
+      },
+      {
+        "question": "Which list method is used to remove the last element?",
+        "options": ["remove()", "delete()", "pop()", "discard()"],
+        "correct_answer": "pop()"
+      },
+      {
+        "question": "What is the output of the following code?\n\n```python\nnumbers = [1, 2, 3]\nnew_numbers = numbers + [4, 5]\nprint(new_numbers)\n```",
+        "options": ["[1, 2, 3, 4, 5]", "[1, 2, 3, [4, 5]]", "[1, 2, 3, 4] [5]", "Error"],
+        "correct_answer": "[1, 2, 3, 4, 5]"
+      },
+      {
+        "question": "Given the code:\n\n```python\noriginal = [1, 2, 3]\ncopy_list = original.copy()\noriginal[0] = 10\nprint(copy_list)\n```What is the output?",
+        "options": ["[1, 2, 3]", "[10, 2, 3]", "[1, 2, 3, 10]", "Error"],
+        "correct_answer": "[1, 2, 3]"
+      },
+      {
+        "question": "What is the correct way to check if an element is present in a list?",
+        "options": ["element in list", "contains(element)", "list.contains(element)", "find(element, list)"],
+        "correct_answer": "element in list"
+      },
+      {
+        "question": "What is the output of the following code?\n\n```python\nnumbers = [1, 2, 3]\nnumbers.remove(2)\nprint(numbers)\n```",
+        "options": ["[1, 2, 3]", "[1, 3]", "[2, 3]", "Error"],
+        "correct_answer": "[1, 3]"
+      },
+      {
+        "question": "Which method is used to insert an element at a specific index in a list?",
+        "options": ["insert()", "add()", "append()", "push()"],
+        "correct_answer": "insert()"
+      },
+      {
+        "question": "What is the result of the following code?\n\n```python\nnumbers = [1, 2, 3]\nresult = sum(numbers)\nprint(result)\n```",
+        "options": ["6", "[1, 2, 3]", "[6]", "Error"],
+        "correct_answer": "6"
+      },
+      {
+        "question": "Given the code:\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nnew_fruits = fruits[::-1]\nprint(new_fruits)\n```What is the output?",
+        "options": ["['cherry', 'banana', 'apple']", "['apple', 'banana', 'cherry']", "['cherry', 'banana', 'apple']", "['apple', 'cherry', 'banana']"],
+        "correct_answer": "['cherry', 'banana', 'apple']"
+      },
+      {
+        "question": "What does the `count()` method do in Python?",
+        "options": ["Counts the occurrences of an element in a list", "Counts the total elements in a list", "Counts the distinct elements in a list", "Counts the elements starting from a given index"],
+        "correct_answer": "Counts the occurrences of an element in a list"
+      },
+      {
+        "question": "What is the output of the following code?\n\n```python\nnumbers = [1, 2, 3]\nnumbers.extend([4, 5])\nprint(numbers)\n```",
+        "options": ["[1, 2, 3]", "[1, 2, 3, [4, 5]]", "[1, 2, 3, 4, 5]", "Error"],
+        "correct_answer": "[1, 2, 3, 4, 5]"
+      },
+      {
+        "question": "Given the code:\n\n```python\noriginal = [1, 2, 3]\nshallow_copy = original.copy()\nshallow_copy[0] = 10\nprint(original)\n```What is the output?",
+        "options": ["[1, 2, 3]", "[10, 2, 3]", "[1, 2, 3, 10]", "Error"],
+        "correct_answer": "[1, 2, 3]"
+      }
+    ],
+        "Python Tuples": [
+          {
+            "question": "What is a tuple in Python?",
+            "options": [
+              "A mutable data type",
+              "An ordered collection of elements",
+              "A key-value pair",
+              "An arithmetic operation"
+            ],
+            "correct_answer": "An ordered collection of elements"
+          },
+          {
+            "question": "How can you create an empty tuple?",
+            "options": ["empty_tuple = ()", "empty_tuple = []", "empty_tuple = {}", "empty_tuple = None"],
+            "correct_answer": "empty_tuple = ()"
+          },
+          {
+            "question": "What is the correct way to access the third element of a tuple named 'my_tuple'?",
+            "options": ["my_tuple(2)", "my_tuple[2]", "my_tuple{2}", "my_tuple.third()"],
+            "correct_answer": "my_tuple[2]"
+          },
+          {
+            "question": "How do you update a value in a tuple?",
+            "options": ["Tuples are immutable", "Using the update() method", "Using a loop", "Using the set() function"],
+            "correct_answer": "Tuples are immutable"
+          },
+          {
+            "question": "What will be the output of the following code?\n\n```python\nmy_tuple = (1, 2, 3)\nprint(my_tuple[1])\n```",
+            "options": ["1", "2", "3", "Error"],
+            "correct_answer": "2"
+          },
+          {
+            "question": "How can you join two tuples in Python?",
+            "options": ["tuple1 + tuple2", "tuple1.join(tuple2)", "tuple1.concat(tuple2)", "Both A and C"],
+            "correct_answer": "tuple1 + tuple2"
+          },
+          {
+            "question": "What is tuple unpacking in Python?",
+            "options": ["Extracting elements from a list", "Assigning values from a tuple to variables", "Creating a tuple from variables", "Converting a tuple to a list"],
+            "correct_answer": "Assigning values from a tuple to variables"
+          },
+          {
+            "question": "Which method is used to find the index of a specified value in a tuple?",
+            "options": ["get()", "find()", "index()", "search()"],
+            "correct_answer": "index()"
+          },
+          {
+            "question": "What is the correct way to loop through a tuple?",
+            "options": ["for i in my_tuple:", "for i = 0 to len(my_tuple):", "foreach i in my_tuple:", "while i in my_tuple:"],
+            "correct_answer": "for i in my_tuple:"
+          },
+          {
+            "question": "Given the code:\n\n```python\ntuple1 = (1, 2, 3)\nfor x in tuple1:\n  print(x)\n```What is the output?",
+            "options": ["1 2 3", "1\n2\n3", "(1, 2, 3)", "Error"],
+            "correct_answer": "1\n2\n3"
+          },
+          {
+            "question": "What is the correct way to check if a value exists in a tuple?",
+            "options": ["if value in my_tuple:", "if value == my_tuple:", "if my_tuple.contains(value):", "if my_tuple.includes(value):"],
+            "correct_answer": "if value in my_tuple:"
+          },
+          {
+            "question": "How do you delete a tuple?",
+            "options": ["del tuple_name", "tuple_name.delete()", "tuple_name.remove()", "Tuples cannot be deleted"],
+            "correct_answer": "Tuples cannot be deleted"
+          },
+          {
+            "question": "What method is used to count the occurrences of a specified value in a tuple?",
+            "options": ["count()", "occurrences()", "find()", "search()"],
+            "correct_answer": "count()"
+          },
+          {
+            "question": "What will be the output of the following code?\n\n```python\ntuple2 = ('apple', 'banana', 'cherry')\nprint(len(tuple2))\n```",
+            "options": ["3", "6", "tuple2", "Error"],
+            "correct_answer": "3"
+          },
+          {
+            "question": "Given the code:\n\n```python\ntuple3 = (1, 2, 3)\nnew_tuple = tuple3 + (4, 5)\nprint(new_tuple)\n```What is the output?",
+            "options": ["(1, 2, 3, 4, 5)", "(1, 2, 3) + (4, 5)", "(1, 2, 3, [4, 5])", "Error"],
+            "correct_answer": "(1, 2, 3, 4, 5)"
+          },
+          {
+            "question": "How do you convert a tuple into a list?",
+            "options": ["list(tuple_name)", "tuple_name.to_list()", "convert(tuple_name, list)", "Both A and C"],
+            "correct_answer": "list(tuple_name)"
+          },
+          {
+            "question": "What is the purpose of the `max()` method when applied to a tuple?",
+            "options": ["Finds the maximum element in the tuple", "Changes the tuple to uppercase", "Returns the total number of elements", "Finds the average of the tuple elements"],
+            "correct_answer": "Finds the maximum element in the tuple"
+          },
+          {
+            "question": "Given the code:\n\n```python\ntuple4 = (3, 1, 8, 6, 2)\nsorted_tuple = sorted(tuple4)\nprint(sorted_tuple)\n```What is the output?",
+            "options": ["(1, 2, 3, 6, 8)", "(8, 6, 3, 2, 1)", "[1, 2, 3, 6, 8]", "Error"],
+            "correct_answer": "[1, 2, 3, 6, 8]"
+          },
+          {
+            "question": "What is the purpose of the `clear()` method when applied to a tuple?",
+            "options": ["Removes all elements from the tuple", "Deletes the tuple", "Sorts the elements in ascending order", "Returns the length of the tuple"],
+            "correct_answer": "Removes all elements from the tuple"
+          },
+          {
+            "question": "Given the code:\n\n```python\ntuple5 = (1, 2, 3)\nrepeated_tuple = tuple5 * 2\nprint(repeated_tuple)\n```What is the output?",
+            "options": ["(1, 2, 3, 1, 2, 3)", "(1, 2, 3, 2, 4, 6)", "Error", "(1, 4, 9)"],
+            "correct_answer": "(1, 2, 3, 1, 2, 3)"
+          },
+          {
+            "question": "What is the output of the following code?\n\n```python\ntuple6 = (10, 20, 30, 40)\nif 20 in tuple6:\n  print('Yes')\nelse:\n  print('No')\n```",
+            "options": ["Yes", "No", "Error", "10 20 30 40"],
+            "correct_answer": "Yes"
+          },
+          {
+            "question": "What method is used to reverse the order of elements in a tuple?",
+            "options": ["reverse()", "invert()", "backwards()", "Both A and C"],
+            "correct_answer": "reverse()"
+          },
+          {
+            "question": "Given the code:\n\n```python\ntuple7 = ('apple', 'banana', 'cherry')\njoined_string = '-'.join(tuple7)\nprint(joined_string)\n```What is the output?",
+            "options": ["apple banana cherry", "apple-banana-cherry", "('apple', 'banana', 'cherry')", "Error"],
+            "correct_answer": "apple-banana-cherry"
+          }
+        ],
+        "Python Sets": [
+            {
+              "question": "What is the primary purpose of using a set in Python?",
+              "options": [
+                "To store elements in a specific order",
+                "To ensure unique elements",
+                "To store key-value pairs",
+                "To perform mathematical operations"
+              ],
+              "correct_answer": "To ensure unique elements"
+            },
+            {
+              "question": "Which of the following is the correct syntax to create an empty set in Python?",
+              "options": [
+                "empty_set = {}",
+                "empty_set = set()",
+                "empty_set = new Set()",
+                "empty_set = {None}"
+              ],
+              "correct_answer": "empty_set = set()"
+            },
+            {
+              "question": "Given the code:\n\n```python\nset1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\nresult_set = set1.union(set2)\nprint(result_set)\n```What is the output?",
+              "options": [
+                "{1, 2, 3, 4, 5, 6}",
+                "{3, 4}",
+                "{1, 2, 5, 6}",
+                "{1, 2, 3, 4}"
+              ],
+              "correct_answer": "{1, 2, 3, 4, 5, 6}"
+            },
+            {
+              "question": "In Python, which method is used to add an element to a set?",
+              "options": [
+                "add()",
+                "insert()",
+                "append()",
+                "push()"
+              ],
+              "correct_answer": "add()"
+            },
+            {
+              "question": "What is the output of the following code?\n\n```python\nset_a = {1, 2, 3}\nset_b = {2, 3, 4}\nresult_set = set_a.intersection(set_b)\nprint(result_set)\n```",
+              "options": [
+                "{1, 2, 3, 4}",
+                "{2, 3}",
+                "{1, 4}",
+                "{}"
+              ],
+              "correct_answer": "{2, 3}"
+            }
+          ],
+          "Python Dictionaries": [
+            {
+              "question": "What is the correct way to create an empty dictionary in Python?",
+              "options": ["empty_dict = {}", "empty_dict = dict()", "empty_dict = dict[]", "empty_dict = {}()"],
+              "correct_answer": "empty_dict = dict()"
+            },
+            {
+              "question": "Consider the following dictionary:\n\n```python\nmy_dict = {'apple': 3, 'banana': 5, 'orange': 2}\n```What is the result of the expression `my_dict['banana']`?",
+              "options": ["2", "3", "5", "KeyError"],
+              "correct_answer": "5"
+            },
+            {
+              "question": "Given the code:\n\n```python\ncar_info = {'brand': 'Toyota', 'model': 'Camry', 'year': 2022}\nprint(car_info.get('color', 'Not specified'))\n```What is the output?",
+              "options": ["Not specified", "None", "Toyota", "KeyError"],
+              "correct_answer": "Not specified"
+            },
+            {
+              "question": "What method is used to remove a key-value pair from a dictionary in Python?",
+              "options": ["delete()", "remove()", "discard()", "pop()"],
+              "correct_answer": "pop()"
+            },
+            {
+              "question": "Consider the following code snippet:\n\n```python\nstudent_grades = {'Alice': 92, 'Bob': 85, 'Charlie': 78}\naverage_grade = sum(student_grades.values()) / len(student_grades)\nprint(average_grade)\n```What is the output?",
+              "options": ["85.0", "81.67", "78.33", "Error"],
+              "correct_answer": "85.0"
+            },
+            {
+              "question": "In Python, what does the `keys()` method of a dictionary return?",
+              "options": ["A list of values", "A list of keys", "A list of key-value pairs", "A list of dictionaries"],
+              "correct_answer": "A list of keys"
+            },
+            {
+              "question": "Given the code:\n\n```python\ninventory = {'apples': 25, 'bananas': 15, 'oranges': 30}\nprint(len(inventory))\n```What is the output?",
+              "options": ["3", "70", "25", "Error"],
+              "correct_answer": "3"
+            },
+            {
+              "question": "How can you check if a key is present in a dictionary without raising an error in Python?",
+              "options": ["Using `exists()` method", "Using `if key in dictionary:`", "Using `isKeyPresent()` method", "Using `contains()` method"],
+              "correct_answer": "Using `if key in dictionary:`"
+            },
+            {
+              "question": "Consider the following code snippet:\n\n```python\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict.popitem())\n```What is the output?",
+              "options": ["{'a': 1}", "('c', 3)", "{'c': 3}", "('a', 1)"],
+              "correct_answer": "('c', 3)"
+            },
+            {
+              "question": "In Python, what is the purpose of the `items()` method of a dictionary?",
+              "options": ["Returns the values of the dictionary", "Returns the keys of the dictionary", "Returns the length of the dictionary", "Returns the key-value pairs of the dictionary"],
+              "correct_answer": "Returns the key-value pairs of the dictionary"
+            }
+          ],
+          "Python RegEx": [
+            {
+              "question": "Which module in Python is used for regular expressions?",
+              "options": ["re", "regex", "regexpy", "regexp"],
+              "correct_answer": "re"
+            },
+            {
+              "question": "What does the 're.findall()' function do in Python?",
+              "options": ["Finds the first match in a string", "Finds all matches in a string", "Searches for a pattern in a string", "Replaces a pattern in a string"],
+              "correct_answer": "Finds all matches in a string"
+            },
+            {
+              "question": "Which of the following is a metacharacter in regular expressions?",
+              "options": ["$", "^", "*", "+", "All of the above"],
+              "correct_answer": "All of the above"
+            },
+            {
+              "question": "What does the 're.search()' function do in Python?",
+              "options": ["Finds the first match in a string", "Finds all matches in a string", "Searches for a pattern in a string", "Replaces a pattern in a string"],
+              "correct_answer": "Finds the first match in a string"
+            },
+            {
+              "question": "Which function is used to split a string using a regular expression pattern in Python?",
+              "options": ["re.find()", "re.split()", "re.search()", "re.sub()"],
+              "correct_answer": "re.split()"
+            },
+            {
+              "question": "What is the purpose of character sets in regular expressions?",
+              "options": ["To match any single character", "To match a specific set of characters", "To represent optional characters", "To match the end of a string"],
+              "correct_answer": "To match a specific set of characters"
+            },
+            {
+              "question": "What is the output of the following code?\\n\\n```python\\nimport re\\nresult = re.sub(r'\\d', '#', 'Hello 123')\\nprint(result)\\n```",
+              "options": ["Hello ###", "Hello 123", "Hello #23", "Error"],
+              "correct_answer": "Hello ###"
+            },
+            {
+              "question": "Which function returns a match object if there is a match anywhere in the string?",
+              "options": ["re.match()", "re.search()", "re.find()", "re.matchall()"],
+              "correct_answer": "re.search()"
+            },
+            {
+              "question": "What is the purpose of the 're.match()' function?",
+              "options": ["Finds the first match in a string", "Finds all matches in a string", "Matches the pattern only at the beginning of the string", "Replaces a pattern in a string"],
+              "correct_answer": "Matches the pattern only at the beginning of the string"
+            },
+            {
+              "question": "The expression '[a-z]' in a regular expression represents:",
+              "options": ["Match any single character", "Match any digit", "Match any lowercase letter", "Match any whitespace character"],
+              "correct_answer": "Match any lowercase letter"
+            },
+            {
+              "question": "What is the output of the following code?\\n\\n```python\\nimport re\\nresult = re.findall(r'\\b\\w{3}\\b', 'The quick brown fox')\\nprint(result)\\n```",
+              "options": ["['The', 'fox']", "['The', 'quick', 'brown', 'fox']", "['The', 'quick']", "['quick', 'brown']"],
+              "correct_answer": "['The', 'quick', 'fox']"
+            },
+            {
+              "question": "Which function returns a match object if the pattern is present at the beginning of the string?",
+              "options": ["re.find()", "re.search()", "re.match()", "re.matchall()"],
+              "correct_answer": "re.match()"
+            },
+            {
+              "question": "What is the purpose of the 're.sub()' function in Python?",
+              "options": ["Finds the first match in a string", "Finds all matches in a string", "Searches for a pattern in a string", "Replaces a pattern in a string"],
+              "correct_answer": "Replaces a pattern in a string"
+            },
+            {
+              "question": "The expression '\\\\d+' in a regular expression represents:",
+              "options": ["Match any single character", "Match one or more digits", "Match zero or more digits", "Match any whitespace character"],
+              "correct_answer": "Match one or more digits"
+            },
+            {
+              "question": "What is the output of the following code?\\n\\n```python\\nimport re\\nresult = re.split(r'\\s', 'Hello World')\\nprint(result)\\n```",
+              "options": ["['Hello', 'World']", "['HelloWorld']", "['Hello', 'W', 'r', 'l', 'd']", "Error"],
+              "correct_answer": "['Hello', 'World']"
+            },
+            {
+              "question": "The expression '\\\\W' in a regular expression represents:",
+              "options": ["Match any single character", "Match any word character", "Match any non-word character", "Match any whitespace character"],
+              "correct_answer": "Match any non-word character"
+            }
+          ],
+          "Python Try except": [
+            {
+              "question": "What is the purpose of the 'try' block in Python?",
+              "options": [
+                "To handle exceptions",
+                "To execute a block of code and catch exceptions",
+                "To raise an exception",
+                "To define a custom exception"
+              ],
+              "correct_answer": "To execute a block of code and catch exceptions"
+            },
+            {
+              "question": "Which keyword is used to catch all exceptions in a 'except' block?",
+              "options": ["all", "except All", "Exception", "catch"],
+              "correct_answer": "Exception"
+            },
+            {
+              "question": "What does the 'else' block in exception handling signify?",
+              "options": [
+                "It is executed when there is an exception",
+                "It is executed when there is no exception",
+                "It defines a custom exception",
+                "It is an alias for the 'finally' block"
+              ],
+              "correct_answer": "It is executed when there is no exception"
+            },
+            {
+              "question": "What is the purpose of the 'finally' block in exception handling?",
+              "options": [
+                "To handle exceptions",
+                "To execute whether an exception occurs or not",
+                "To raise an exception",
+                "To define a custom exception"
+              ],
+              "correct_answer": "To execute whether an exception occurs or not"
+            },
+            {
+              "question": "What will be the output of the following code?\n\n```python\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    result = 'Error'\nfinally:\n    result = result + ' - Finally'\nprint(result)\n```",
+              "options": ["Error - Finally", "ZeroDivisionError - Finally", "ZeroDivisionError", "Error"],
+              "correct_answer": "Error - Finally"
+            },
+            {
+              "question": "In Python, how do you raise a custom exception?",
+              "options": [
+                "Using the 'assert' keyword",
+                "Using the 'raise' keyword",
+                "Using the 'try' keyword",
+                "Using the 'exception' keyword"
+              ],
+              "correct_answer": "Using the 'raise' keyword"
+            },
+            {
+              "question": "What will be the output of the following code?\n\n```python\ntry:\n    result = int('abc')\nexcept ValueError:\n    result = 'ValueError'\nelse:\n    result = 'No Error'\nfinally:\n    result = result + ' - Finally'\nprint(result)\n```",
+              "options": ["ValueError - Finally", "No Error", "ValueError", "None"],
+              "correct_answer": "ValueError - Finally"
+            },
+            {
+              "question": "How can you handle multiple exceptions in a single 'except' block?",
+              "options": [
+                "Using multiple 'except' blocks",
+                "Using a tuple in the 'except' block",
+                "Using a list in the 'except' block",
+                "Using nested 'try' blocks"
+              ],
+              "correct_answer": "Using a tuple in the 'except' block"
+            },
+            {
+              "question": "What will be the output of the following code?\n\n```python\ntry:\n    result = 10 / 0\nexcept (ZeroDivisionError, ValueError):\n    result = 'Error'\nfinally:\n    result = result + ' - Finally'\nprint(result)\n```",
+              "options": ["Error - Finally", "ZeroDivisionError - Finally", "ValueError - Finally", "Error"],
+              "correct_answer": "Error - Finally"
+            },
+            {
+              "question": "In Python, how do you explicitly raise a 'ValueError' exception?",
+              "options": [
+                "raise Exception('ValueError')",
+                "raise ValueError",
+                "throw ValueError",
+                "except ValueError"
+              ],
+              "correct_answer": "raise ValueError"
+            },
+            {
+              "question": "What will be the output of the following code?\n\n```python\ntry:\n    result = 10 / 2\nexcept ZeroDivisionError:\n    result = 'Error'\nelse:\n    result = 'No Error'\nfinally:\n    result = result + ' - Finally'\nprint(result)\n```",
+              "options": ["No Error - Finally", "Error - Finally", "No Error", "None"],
+              "correct_answer": "No Error - Finally"
+            }
+          ]
+    
+  }
+  

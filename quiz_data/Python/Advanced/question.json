@@ -1,0 +1,595 @@
+{
+    "Python PIP ": [
+      {
+        "question": "What is PIP in Python?",
+        "options": [
+          "A Python Integrated Package",
+          "A Python Index of Packages",
+          "A Python Package Installer",
+          "A Python Package Inserter"
+        ],
+        "correct_answer": "A Python Package Installer"
+      },
+      {
+        "question": "What is a Python package?",
+        "options": [
+          "A collection of Python files",
+          "A container for scripts and modules",
+          "A compressed folder of code",
+          "A graphical user interface for Python"
+        ],
+        "correct_answer": "A container for scripts and modules"
+      },
+      {
+        "question": "How can you check if PIP is installed in your Python environment?",
+        "options": [
+          "pip check",
+          "python -m ensurepip",
+          "pip status",
+          "pip installed"
+        ],
+        "correct_answer": "python -m ensurepip"
+      },
+      {
+        "question": "What command is used to install PIP?",
+        "options": [
+          "pip install",
+          "python install-pip.py",
+          "pip setup",
+          "install pip"
+        ],
+        "correct_answer": "python install-pip.py"
+      },
+      {
+        "question": "How do you download and install a Python package using PIP? (Choose the correct command)",
+        "options": [
+          "pip add <package-name>",
+          "pip download <package-name>",
+          "pip get <package-name>",
+          "pip install <package-name>"
+        ],
+        "correct_answer": "pip install <package-name>"
+      },
+      {
+        "question": "Given the code:\n\n```python\nimport requests\nprint(requests.__version__)\n```What does this code output?",
+        "options": ["1.1.1", "3.0.0", "2.22.0", "Version not available"],
+        "correct_answer": "Version not available"
+      },
+      {
+        "question": "How do you find information about a package using PIP? (Choose the correct command)",
+        "options": [
+          "pip getinfo <package-name>",
+          "pip info <package-name>",
+          "pip describe <package-name>",
+          "pip show <package-name>"
+        ],
+        "correct_answer": "pip show <package-name>"
+      },
+      {
+        "question": "What is the command to remove a package using PIP?",
+        "options": [
+          "pip delete <package-name>",
+          "pip remove <package-name>",
+          "pip uninstall <package-name>",
+          "pip discard <package-name>"
+        ],
+        "correct_answer": "pip uninstall <package-name>"
+      },
+      {
+        "question": "How can you list all installed packages in your Python environment using PIP?",
+        "options": [
+          "pip list",
+          "pip show",
+          "pip display",
+          "pip installed"
+        ],
+        "correct_answer": "pip list"
+      },
+      {
+        "question": "Given the code:\n\n```python\nimport numpy\nprint(numpy.__version__)\n```What does this code output?",
+        "options": ["1.1.0", "3.0.0", "2.22.0", "Version not available"],
+        "correct_answer": "Version not available"
+      },
+      {
+        "question": "How do you search for packages on the Python Package Index (PyPI) using PIP?",
+        "options": [
+          "pip find <package-name>",
+          "pip search <package-name>",
+          "pip seek <package-name>",
+          "pip locate <package-name>"
+        ],
+        "correct_answer": "pip search <package-name>"
+      }
+    ],
+    "Python Module": [
+        {
+          "question": "What is a module in Python?",
+          "options": [
+            "A Python file containing only functions.",
+            "A collection of functions and variables.",
+            "A directory containing Python scripts.",
+            "A built-in function in Python."
+          ],
+          "correct_answer": "A collection of functions and variables."
+        },
+        {
+          "question": "How do you create a module in Python?",
+          "options": [
+            "Save the functions in a text file.",
+            "Create a directory and add functions.",
+            "Write functions in a Python file.",
+            "Use the 'module()' keyword."
+          ],
+          "correct_answer": "Write functions in a Python file."
+        },
+        {
+          "question": "What is the correct way to use a function from a module?",
+          "options": [
+            "Call the function using its name.",
+            "Import the module and use dot notation.",
+            "Copy and paste the function into your script.",
+            "Use the 'import_function' keyword."
+          ],
+          "correct_answer": "Import the module and use dot notation."
+        },
+        {
+          "question": "How do you access a variable 'x' from a module named 'example'?",
+          "options": [
+            "example.x",
+            "example::x",
+            "x.example",
+            "import example.x"
+          ],
+          "correct_answer": "example.x"
+        },
+        {
+          "question": "What is the purpose of renaming a module in Python?",
+          "options": [
+            "To confuse other programmers.",
+            "To make the code shorter.",
+            "To avoid naming conflicts.",
+            "It is not possible to rename modules."
+          ],
+          "correct_answer": "To avoid naming conflicts."
+        },
+        {
+          "question": "Which of the following is NOT a built-in module in Python?",
+          "options": [
+            "math",
+            "random",
+            "example",
+            "os"
+          ],
+          "correct_answer": "example"
+        },
+        {
+          "question": "What does the 'dir()' function in Python do?",
+          "options": [
+            "Displays the directory structure.",
+            "Lists all files in the current directory.",
+            "Lists all functions and variables in a module.",
+            "Deletes a directory."
+          ],
+          "correct_answer": "Lists all functions and variables in a module."
+        },
+        {
+          "question": "What is the correct way to import a specific function 'func' from a module 'example'?",
+          "options": [
+            "import example",
+            "import example.func",
+            "from example import func",
+            "use example.func"
+          ],
+          "correct_answer": "from example import func"
+        },
+        {
+          "question": "Given the code in a module named 'math_operations':\n\n```python\nPI = 3.1416\n\ndef calculate_area(radius):\n    return PI * radius * radius\n```What is the correct way to use the 'calculate_area' function in another script?",
+          "options": [
+            "math_operations.calculate_area(5)",
+            "import math_operations.calculate_area",
+            "use math_operations.calculate_area(5)",
+            "from math_operations import calculate_area"
+          ],
+          "correct_answer": "from math_operations import calculate_area"
+        },
+        {
+          "question": "If you want to import all functions and variables from a module named 'example', what is the correct syntax?",
+          "options": [
+            "import example.*",
+            "from example import *",
+            "include example",
+            "use example.all"
+          ],
+          "correct_answer": "from example import *"
+        },
+        {
+          "question": "What is the output of the following code in a module named 'example':\n\n```python\nx = 10\nprint(dir())\n```",
+          "options": [
+            "['x']",
+            "['example']",
+            "['x', 'example']",
+            "['dir', 'print', 'x']"
+          ],
+          "correct_answer": "['dir', 'print', 'x']"
+        }
+      ],
+      "Python Datetime": [
+        {
+          "question": "Which module in Python is used for date and time manipulation?",
+          "options": ["time", "calendar", "datetime", "date"],
+          "correct_answer": "datetime"
+        },
+        {
+          "question": "What does the 'strftime' method do in Python datetime?",
+          "options": ["Subtracts two dates", "Formats a date as a string", "Compares two dates", "Returns the current date"],
+          "correct_answer": "Formats a date as a string"
+        },
+        {
+          "question": "Which of the following is a valid format code for the 'strftime' method to represent the full weekday name?",
+          "options": ["%A", "%a", "%W", "%w"],
+          "correct_answer": "%A"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nimport datetime\nnow = datetime.datetime.now()\nformatted_date = now.strftime('%Y-%m-%d %H:%M:%S')\nprint(formatted_date)\n```",
+          "options": ["2023-11-10 12:30:45", "12:30:45 2023-11-10", "2023/11/10 12:30:45", "Nov 10, 2023, 12:30:45"],
+          "correct_answer": "2023-11-10 12:30:45"
+        },
+        {
+          "question": "How can you create a datetime object representing the date '2022-05-20'?",
+          "options": ["datetime.create(2022, 5, 20)", "datetime.date(2022, 5, 20)", "datetime(2022, 5, 20)", "datetime.datetime(2022, 5, 20)"],
+          "correct_answer": "datetime.datetime(2022, 5, 20)"
+        },
+        {
+          "question": "Which of the following is a valid format code for the 'strftime' method to represent the day of the month as a zero-padded decimal number?",
+          "options": ["%d", "%D", "%m", "%B"],
+          "correct_answer": "%d"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nimport datetime\nbirthday = datetime.datetime(1990, 5, 15)\nprint(birthday.strftime('%A'))\n```",
+          "options": ["Monday", "Wednesday", "Friday", "Sunday"],
+          "correct_answer": "Friday"
+        },
+        {
+          "question": "How can you get the current date in Python without the time component?",
+          "options": ["datetime.date.now()", "datetime.date.today()", "datetime.now()", "date.today()"],
+          "correct_answer": "datetime.date.today()"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nimport datetime\nstart_date = datetime.date(2023, 1, 1)\nend_date = datetime.date(2023, 1, 10)\ndays_difference = (end_date - start_date).days\nprint(days_difference)\n```",
+          "options": ["10", "-10", "9", "-9"],
+          "correct_answer": "9"
+        },
+        {
+          "question": "Which of the following is a valid format code for the 'strftime' method to represent the hour (24-hour clock) as a zero-padded decimal number?",
+          "options": ["%H", "%h", "%I", "%M"],
+          "correct_answer": "%H"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nimport datetime\nnow = datetime.datetime.now()\nprint(now.strftime('%B %d, %Y'))\n```",
+          "options": ["November 10, 2023", "Nov 10, 2023", "2023-11-10", "10th November 2023"],
+          "correct_answer": "November 10, 2023"
+        }
+      ],
+      "Python Advanced Math": [
+        {
+          "question": "What is the result of the following expression?\n\n```python\nimport math\nresult = math.sqrt(16)\nprint(result)\n```",
+          "options": ["2", "4", "8", "16"],
+          "correct_answer": "4"
+        },
+        {
+          "question": "In Python, what does the `math.ceil()` function do?",
+          "options": ["Rounds down to the nearest integer", "Rounds up to the nearest integer", "Returns the floor value", "Returns the absolute value"],
+          "correct_answer": "Rounds up to the nearest integer"
+        },
+        {
+          "question": "What does the `math.pow(x, y)` function do in Python?",
+          "options": ["Calculates x to the power of y", "Calculates the square root of x", "Calculates the absolute value of x", "Calculates the factorial of x"],
+          "correct_answer": "Calculates x to the power of y"
+        },
+        {
+          "question": "Given the code:\n\n```python\nimport math\nresult = math.floor(8.9)\nprint(result)\n```What is the output?",
+          "options": ["8", "9", "8.9", "9.0"],
+          "correct_answer": "8"
+        },
+        {
+          "question": "What is the purpose of the `math.sin()` function in Python?",
+          "options": ["Calculates the sine of a number", "Calculates the cosine of a number", "Calculates the tangent of a number", "Calculates the arcsine of a number"],
+          "correct_answer": "Calculates the sine of a number"
+        },
+        {
+          "question": "Given the code:\n\n```python\nimport math\nresult = math.exp(2)\nprint(result)\n```What is the output?",
+          "options": ["4", "7.389", "2", "20.085"],
+          "correct_answer": "7.389"
+        },
+        {
+          "question": "What is the purpose of the `math.log(x)` function in Python?",
+          "options": ["Calculates the logarithm base 10 of x", "Calculates the natural logarithm of x", "Calculates the square root of x", "Calculates the factorial of x"],
+          "correct_answer": "Calculates the natural logarithm of x"
+        },
+        {
+          "question": "Given the code:\n\n```python\nimport math\nresult = math.radians(180)\nprint(result)\n```What is the output?",
+          "options": ["3.141", "180", "1.570", "0.785"],
+          "correct_answer": "3.141"
+        },
+        {
+          "question": "What does the `math.factorial(x)` function do in Python?",
+          "options": ["Calculates the square root of x", "Calculates the absolute value of x", "Calculates the factorial of x", "Calculates x to the power of 2"],
+          "correct_answer": "Calculates the factorial of x"
+        },
+        {
+          "question": "Given the code:\n\n```python\nimport math\nresult = math.cos(math.pi)\nprint(result)\n```What is the output?",
+          "options": ["0", "1", "-1", "Error"],
+          "correct_answer": "-1"
+        },
+        {
+          "question": "What is the purpose of the `math.acos(x)` function in Python?",
+          "options": ["Calculates the arcsine of x", "Calculates the arccosine of x", "Calculates the arctangent of x", "Calculates the absolute value of x"],
+          "correct_answer": "Calculates the arccosine of x"
+        },
+        {
+          "question": "Given the code:\n\n```python\nimport math\nresult = math.isclose(0.1 + 0.2, 0.3)\nprint(result)\n```What is the output?",
+          "options": ["True", "False", "Error", "0.1"],
+          "correct_answer": "True"
+        },
+        {
+          "question": "What is the output of the following expression?\n\n```python\nimport math\nresult = math.floor(math.sqrt(25))\nprint(result)\n```",
+          "options": ["5", "4", "6", "25"],
+          "correct_answer": "5"
+        },
+        {
+          "question": "Given the code:\n\n```python\nimport math\nresult = math.atan(1)\nprint(result)\n```What is the output?",
+          "options": ["0.5", "1", "0", "Error"],
+          "correct_answer": "0.785"
+        },
+        {
+          "question": "What is the purpose of the `math.hypot(x, y)` function in Python?",
+          "options": ["Calculates the hypotenuse of a right-angled triangle", "Calculates the square root of x", "Calculates the natural logarithm of x", "Calculates x to the power of y"],
+          "correct_answer": "Calculates the hypotenuse of a right-angled triangle"
+        }
+      ],
+      "Python JSON": [
+        {
+          "question": "What is the primary library in Python for working with JSON?",
+          "options": ["JSONlib", "pyJSON", "JSONutils", "json"],
+          "correct_answer": "json"
+        },
+        {
+          "question": "Which method is used to parse JSON data in Python?",
+          "options": ["json.parse()", "json.loads()", "json.parseJSON()", "json.decode()"],
+          "correct_answer": "json.loads()"
+        },
+        {
+          "question": "Consider the following JSON string:\n\n```json\n{\"name\": \"John\", \"age\": 30, \"city\": \"New York\"}\n```\nHow do you access the 'age' value in Python after parsing?",
+          "options": [
+            "data[2]",
+            "data[\"age\"]",
+            "data.age",
+            "data.get(\"age\")"
+          ],
+          "correct_answer": "data[\"age\"]"
+        },
+        {
+          "question": "Given the Python dictionary:\n\n```python\nuser_data = {'name': 'Alice', 'age': 25, 'city': 'London'}\n```\nHow can you convert it to a JSON string?",
+          "options": [
+            "json.to_string(user_data)",
+            "json.dump(user_data)",
+            "json.dumps(user_data)",
+            "json.stringify(user_data)"
+          ],
+          "correct_answer": "json.dumps(user_data)"
+        },
+        {
+          "question": "What is the purpose of the 'indent' parameter in the json.dumps() method?",
+          "options": [
+            "To specify the encoding format",
+            "To control the number of spaces for indentation",
+            "To set the data type",
+            "To add line breaks"
+          ],
+          "correct_answer": "To control the number of spaces for indentation"
+        },
+        {
+          "question": "Consider the following Python code:\n\n```python\nimport json\n\ndata = {'name': 'Bob', 'age': 22, 'city': 'Paris'}\nresult = json.dumps(data, indent=2, sort_keys=True)\nprint(result)\n```What will be the output?",
+          "options": [
+            "{\n  \"age\": 22,\n  \"city\": \"Paris\",\n  \"name\": \"Bob\"\n}",
+            "{\n  \"name\": \"Bob\",\n  \"age\": 22,\n  \"city\": \"Paris\"\n}",
+            "{\n  \"city\": \"Paris\",\n  \"age\": 22,\n  \"name\": \"Bob\"\n}",
+            "{\n  \"name\": \"Bob\",\n  \"city\": \"Paris\",\n  \"age\": 22\n}"
+          ],
+          "correct_answer": "{\n  \"age\": 22,\n  \"city\": \"Paris\",\n  \"name\": \"Bob\"\n}"
+        },
+        {
+          "question": "Which method is used to convert a JSON string to a Python object?",
+          "options": ["json.loads()", "json.parse()", "json.to_object()", "json.decode()"],
+          "correct_answer": "json.loads()"
+        },
+        {
+          "question": "Consider the Python code:\n\n```python\nimport json\n\ndata = {'name': 'Charlie', 'age': 28, 'city': 'Berlin'}\nresult = json.dumps(data, separators=(',', ':'))\nprint(result)\n```What does the 'separators' parameter do?",
+          "options": [
+            "Sets the decimal and thousand separators",
+            "Specifies the characters used to separate key-value pairs",
+            "Controls the separator between items in an array",
+            "Ignores all separators in the JSON string"
+          ],
+          "correct_answer": "Specifies the characters used to separate key-value pairs"
+        },
+        {
+          "question": "In JSON, which data type is not natively supported?",
+          "options": ["int", "float", "tuple", "datetime"],
+          "correct_answer": "tuple"
+        },
+        {
+          "question": "Given the Python code:\n\n```python\nimport json\n\njson_str = '{\"name\": \"David\", \"age\": 35, \"city\": \"Tokyo\"}'\ndata = json.loads(json_str)\nprint(data[\"city\"])\n```What will be the output?",
+          "options": ["Tokyo", "35", "David", "Error"],
+          "correct_answer": "Tokyo"
+        },
+        {
+          "question": "When using json.dumps(), how can you handle non-serializable objects in Python?",
+          "options": [
+            "Set the 'safe' parameter to True",
+            "Use the 'ignore_errors' parameter",
+            "Implement a custom serialization function",
+            "Wrap the non-serializable object in a try-except block"
+          ],
+          "correct_answer": "Implement a custom serialization function"
+        },
+        {
+          "question": "Consider the Python code:\n\n```python\nimport json\n\njson_str = '[{\"name\": \"Eva\", \"age\": 30}, {\"name\": \"Frank\", \"age\": 40}]'\ndata = json.loads(json_str)\nprint(data[0][\"name\"])\n```What will be the output?",
+          "options": ["Eva", "Frank", "30", "Error"],
+          "correct_answer": "Eva"
+        }
+      ],
+      "Python File Handling": [
+        {
+          "question": "What is the correct syntax for opening a file in Python?",
+          "options": [
+            "file = open('filename.txt', 'r')",
+            "file.open('filename.txt', 'read')",
+            "open('filename.txt') as file",
+            "file = read('filename.txt')"
+          ],
+          "correct_answer": "file = open('filename.txt', 'r')"
+        },
+        {
+          "question": "How do you close a file in Python?",
+          "options": [
+            "close(file)",
+            "file.close()",
+            "end(file)",
+            "file.end()"
+          ],
+          "correct_answer": "file.close()"
+        },
+        {
+          "question": "What method is used to read the entire content of a file in Python?",
+          "options": [
+            "file.read_all()",
+            "file.read()",
+            "file.read_file()",
+            "read(file)"
+          ],
+          "correct_answer": "file.read()"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nwith open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)\n```",
+          "options": ["Error", "None", "Content of 'example.txt'", "True"],
+          "correct_answer": "Content of 'example.txt'"
+        },
+        {
+          "question": "Which method is used to read a specific number of characters from a file in Python?",
+          "options": [
+            "file.read_chars(5)",
+            "file.read(5)",
+            "read(file, 5)",
+            "read_chars(file, 5)"
+          ],
+          "correct_answer": "file.read(5)"
+        },
+        {
+          "question": "How do you open a file in write mode and create it if it doesn't exist?",
+          "options": [
+            "file = open('newfile.txt', 'w')",
+            "file = create('newfile.txt', 'w')",
+            "file = open('newfile.txt', 'create')",
+            "file = create('newfile.txt')"
+          ],
+          "correct_answer": "file = open('newfile.txt', 'w')"
+        },
+        {
+          "question": "What is the correct way to write a line to a file in Python?",
+          "options": [
+            "file.write_line('Hello, World!')",
+            "file.write('Hello, World!')",
+            "write_line(file, 'Hello, World!')",
+            "write(file, 'Hello, World!')"
+          ],
+          "correct_answer": "file.write('Hello, World!')"
+        },
+        {
+          "question": "What is the purpose of the 'a' mode when opening a file in Python?",
+          "options": [
+            "Append mode (add to the end of the file)",
+            "Access mode (read and write)",
+            "Asynchronous mode",
+            "Add mode (create a new file)"
+          ],
+          "correct_answer": "Append mode (add to the end of the file)"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nwith open('example.txt', 'a') as file:\n    file.write('Appended line')\n```",
+          "options": ["Error", "None", "True", "No output"],
+          "correct_answer": "No output"
+        },
+        {
+          "question": "How do you check if a file exists in Python?",
+          "options": [
+            "if file.exists('filename.txt'):",
+            "if exists('filename.txt'):",
+            "if 'filename.txt' in files:",
+            "if os.path.exists('filename.txt'):"
+          ],
+          "correct_answer": "if os.path.exists('filename.txt'):"
+        },
+        {
+          "question": "What is the purpose of the 'rb' mode when opening a file in Python?",
+          "options": [
+            "Read binary mode",
+            "Read and write binary mode",
+            "Replace binary mode",
+            "Rebuild binary mode"
+          ],
+          "correct_answer": "Read binary mode"
+        },
+        {
+          "question": "What method is used to delete a file in Python?",
+          "options": [
+            "delete(file)",
+            "remove(file)",
+            "file.remove()",
+            "os.remove(file)"
+          ],
+          "correct_answer": "os.remove(file)"
+        },
+        {
+          "question": "What is the purpose of the 'x' mode when opening a file in Python?",
+          "options": [
+            "Execute mode",
+            "Exclusive creation mode (fails if the file exists)",
+            "Examine mode",
+            "Extend mode"
+          ],
+          "correct_answer": "Exclusive creation mode (fails if the file exists)"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nwith open('example.txt', 'x') as file:\n    file.write('New file')\n```",
+          "options": ["Error", "None", "True", "No output"],
+          "correct_answer": "No output"
+        },
+        {
+          "question": "How do you delete a folder in Python?",
+          "options": [
+            "delete_folder('foldername')",
+            "remove_folder('foldername')",
+            "os.rmdir('foldername')",
+            "os.delete('foldername')"
+          ],
+          "correct_answer": "os.rmdir('foldername')"
+        },
+        {
+          "question": "What is the purpose of the 'w+' mode when opening a file in Python?",
+          "options": [
+            "Write and read mode",
+            "Write-only mode",
+            "Wide mode (large files)",
+            "Write and append mode"
+          ],
+          "correct_answer": "Write and read mode"
+        },
+        {
+          "question": "What is the output of the following code?\n\n```python\nwith open('example.txt', 'w+') as file:\n    file.write('Hello')\n    content = file.read()\n    print(content)\n```",
+          "options": ["Error", "None", "Hello", "No output"],
+          "correct_answer": "No output"
+        }
+      ]
+  }
+  

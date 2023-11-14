@@ -379,6 +379,7 @@
       ],
       "correct_answer": "string[::-1]"
     },
+
     {
       "question": "What method is used to check if all characters in a string are alphanumeric?",
       "options": [
@@ -477,6 +478,26 @@
         "correct_answer": "//"
       },
       {
+        "question": "What is the result of the following expression?\n\n```python\n3 < 5 and 10 >= 8```\n",
+        "options": ["True", "False", "None", "Error"],
+        "correct_answer": "True"
+      },
+      {
+        "question": "Which operator is used for membership 'NOT IN' in Python?",
+        "options": ["!in", "notin", "not in", "innot"],
+        "correct_answer": "not in"
+      },
+      {
+        "question": "What is the output of the following code? \n\n```python\nx = 8\ny = 3\nresult = x // y\nprint(result)\n```",
+        "options": ["2.67", "2", "3", "24"],
+        "correct_answer": "2"
+      },
+      {
+        "question": "Given the code:\n\n```python\nb = 7\nb *= 4\nprint(b)\n```What is the output?",
+        "options": ["11", "21", "28", "35"],
+        "correct_answer": "28"
+      },
+      {
         "question": "What is the result of the expression 5 < 7?",
         "options": ["True", "False", "None", "Error"],
         "correct_answer": "True"
@@ -501,6 +522,430 @@
         "options": ["^", "&", "|", "<<"],
         "correct_answer": "^"
       }
+  ],
+  "Python Program Flow": [
+    {
+      "question": "What is the purpose of indentation in Python?",
+      "options": ["Enhances code readability", "Adds extra spaces", "Improves execution speed", "Required by the language specification"],
+      "correct_answer": "Enhances code readability"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nx = 5\nif x > 0:\n    print('Positive')\nelse:\n    print('Negative')\n```",
+      "options": ["Positive", "Negative", "0", "Error"],
+      "correct_answer": "Positive"
+    },
+    {
+      "question": "In Python, what keyword is used for the 'else if' condition?",
+      "options": ["elseif", "elif", "else if", "then"],
+      "correct_answer": "elif"
+    },
+    {
+      "question": "What is the purpose of the 'pass' statement in Python?",
+      "options": ["To break out of a loop", "To continue to the next iteration of a loop", "To do nothing and act as a placeholder", "To terminate the program"],
+      "correct_answer": "To do nothing and act as a placeholder"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nx = 10\nif x > 5:\n    print('Greater than 5')\n    if x < 15:\n        print('Less than 15')\n```",
+      "options": ["Greater than 5", "Less than 15", "Both Greater than 5 and Less than 15", "None of the above"],
+      "correct_answer": "Both Greater than 5 and Less than 15"
+    },
+    {
+      "question": "What is the purpose of the 'break' statement in Python?",
+      "options": ["To exit a loop prematurely", "To skip the current iteration of a loop", "To terminate the program", "To switch to the next case in a switch statement"],
+      "correct_answer": "To exit a loop prematurely"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfor i in range(3):\n    print(i)\nelse:\n    print('Finished')\n```",
+      "options": ["0 1 2 Finished", "0 1 2", "Finished", "Error"],
+      "correct_answer": "0 1 2 Finished"
+    },
+    {
+      "question": "In Python, what does the 'continue' statement do?",
+      "options": ["Exits the loop", "Skips the current iteration and moves to the next", "Jumps to a specific label", "Ends the program"],
+      "correct_answer": "Skips the current iteration and moves to the next"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfor char in 'Python':\n    if char == 'h':\n        continue\n    print(char)\n```",
+      "options": ["Python", "Pyton", "Pthon", "P"],
+      "correct_answer": "Pyton"
+    },
+    {
+      "question": "What is the purpose of the 'else' statement in a loop?",
+      "options": ["To specify the start of the loop", "To indicate the end of the loop", "To execute a block of code when the loop is exhausted", "To handle errors in the loop"],
+      "correct_answer": "To execute a block of code when the loop is exhausted"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfor i in range(5):\n    if i == 2:\n        break\n    print(i)\nelse:\n    print('Loop completed')\n```",
+      "options": ["0 1", "0 1 2", "0 1 2 Loop completed", "Error"],
+      "correct_answer": "0 1"
+    },
+    {
+      "question": "What is the purpose of the 'range()' function in a for loop?",
+      "options": ["To generate a list of numbers", "To create an infinite loop", "To specify the range of values for the loop variable", "To control the flow of the loop"],
+      "correct_answer": "To specify the range of values for the loop variable"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfor i in range(2, 5):\n    print(i)\nelse:\n    print('Loop completed')\n```",
+      "options": ["2 3 4 Loop completed", "2 3 4", "2 3 Loop completed", "Error"],
+      "correct_answer": "2 3 4 Loop completed"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfor i in range(2):\n    for j in range(2):\n        print(i, j)\n```",
+      "options": ["0 0 1 1", "0 1 2 3", "0 1", "Error"],
+      "correct_answer": "0 0 0 1 1 0 1 1"
+    },
+    {
+      "question": "What is the purpose of nested loops in Python?",
+      "options": ["To improve code readability", "To simplify the program structure", "To create more complex logic", "To reduce execution time"],
+      "correct_answer": "To create more complex logic"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfor i in range(3):\n    pass\n```",
+      "options": ["0 1 2", "Error", "No output", "Loop completed"],
+      "correct_answer": "No output"
+    }
+  ],
+  "Python Arrays": [
+    {
+      "question": "What is the purpose of indentation in Python?",
+      "options": [
+        "To make the code visually appealing",
+        "To improve performance",
+        "To define the scope of code blocks",
+        "To create empty spaces"
+      ],
+      "correct_answer": "To define the scope of code blocks"
+    },
+    {
+      "question": "What is the keyword used to start an 'if' statement in Python?",
+      "options": ["case", "switch", "if", "then"],
+      "correct_answer": "if"
+    },
+    {
+      "question": "How is an array defined in Python?",
+      "options": [
+        "array = [1, 2, 3]",
+        "array(1, 2, 3)",
+        "array{1, 2, 3}",
+        "array = 1, 2, 3"
+      ],
+      "correct_answer": "array = [1, 2, 3]"
+    },
+    {
+      "question": "How do you access the first element of an array in Python?",
+      "options": ["array[0]", "array(0)", "array.first()", "array.get(0)"],
+      "correct_answer": "array[0]"
+    },
+    {
+      "question": "What method is used to find the length of an array in Python?",
+      "options": ["size()", "count()", "len()", "length()"],
+      "correct_answer": "len()"
+    },
+    {
+      "question": "Which loop is used for iterating through array elements in Python?",
+      "options": ["for loop", "while loop", "do-while loop", "loop"],
+      "correct_answer": "for loop"
+    },
+    {
+      "question": "How do you add an element to the end of an array in Python?",
+      "options": ["array.add(element)", "array.append(element)", "array.insert(element)", "array.push(element)"],
+      "correct_answer": "array.append(element)"
+    },
+    {
+      "question": "What is the purpose of the 'remove()' method for arrays in Python?",
+      "options": ["Remove a specified element", "Remove the last element", "Remove all elements", "Remove elements at even indices"],
+      "correct_answer": "Remove a specified element"
+    },
+    {
+      "question": "Which method is used to reverse the order of elements in an array in Python?",
+      "options": ["reverse()", "flip()", "invert()", "backwards()"],
+      "correct_answer": "reverse()"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nnumbers = [1, 2, 3, 4]\nprint(numbers[1:3])\n```",
+      "options": ["[1, 2]", "[2, 3]", "[3, 4]", "[1, 3]"],
+      "correct_answer": "[2, 3]"
+    },
+    {
+      "question": "How do you check if an element is present in an array in Python?",
+      "options": ["element in array", "array.contains(element)", "array.has(element)", "find(element, array)"],
+      "correct_answer": "element in array"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nvalues = [1, 2, 3]\nvalues *= 2\nprint(values)\n```",
+      "options": ["[1, 2, 3]", "[1, 2, 3, 1, 2, 3]", "[2, 4, 6]", "[1, 4, 9]"],
+      "correct_answer": "[1, 2, 3, 1, 2, 3]"
+    },
+    {
+      "question": "What is the purpose of the 'pop()' method for arrays in Python?",
+      "options": ["Add an element", "Remove the last element", "Remove a specified element", "Remove all elements"],
+      "correct_answer": "Remove the last element"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nfruits.remove('banana')\nprint(fruits)\n```",
+      "options": ["['apple', 'banana']", "['apple', 'cherry']", "['banana', 'cherry']", "['apple', 'banana', 'cherry']"],
+      "correct_answer": "['apple', 'cherry']"
+    },
+    {
+      "question": "Which method is used to clear all elements from an array in Python?",
+      "options": ["clear()", "removeAll()", "deleteAll()", "erase()"],
+      "correct_answer": "clear()"
+    }
+  ],
+  "Python Classes and Objects": [
+    {
+      "question": "What is the purpose of the __init__() function in a Python class?",
+      "options": [
+        "To initialize class variables",
+        "To create an instance of the class",
+        "To define class methods",
+        "To delete the class instance"
+      ],
+      "correct_answer": "To initialize class variables"
+    },
+    {
+      "question": "Which special method in Python is used to create a string representation of an object?",
+      "options": ["__str__", "__repr__", "__print__", "__display__"],
+      "correct_answer": "__str__"
+    },
+    {
+      "question": "How do you modify the properties of an object in Python?",
+      "options": [
+        "Using the _update_() method",
+        "Using the _modify_() method",
+        "Directly accessing and modifying the property",
+        "Properties cannot be modified"
+      ],
+      "correct_answer": "Directly accessing and modifying the property"
+    },
+    {
+      "question": "What does the 'self' parameter represent in a Python class method?",
+      "options": [
+        "The class instance itself",
+        "A placeholder for future instances",
+        "A keyword for class methods",
+        "A reserved keyword for integers"
+      ],
+      "correct_answer": "The class instance itself"
+    },
+    {
+      "question": "How do you delete an object property in Python?",
+      "options": ["del property_name", "remove(property_name)", "delete property_name", "No way to delete properties"],
+      "correct_answer": "del property_name"
+    },
+    {
+      "question": "What is the purpose of the 'pass' statement in Python?",
+      "options": [
+        "To define an empty class",
+        "To indicate the end of a code block",
+        "To create a placeholder with no action",
+        "To break out of a loop"
+      ],
+      "correct_answer": "To create a placeholder with no action"
+    }
+  ],
+  "Python Inheritance": [
+    {
+      "question": "What is the main purpose of inheritance in Python?",
+      "options": [
+        "To create objects",
+        "To allow a class to inherit properties and methods of another class",
+        "To prevent code reuse",
+        "To define private methods"
+      ],
+      "correct_answer": "To allow a class to inherit properties and methods of another class"
+    },
+    {
+      "question": "What function is used to call the constructor of the parent class in a child class?",
+      "options": ["super()", "parent()", "base()", "self()"],
+      "correct_answer": "super()"
+    },
+    {
+      "question": "How do you add a new method to a child class in Python?",
+      "options": ["Using the @staticmethod decorator", "By directly defining it in the child class", "By creating a separate module", "Child classes cannot have additional methods"],
+      "correct_answer": "By directly defining it in the child class"
+    },
+    {
+      "question": "In Python, can a child class inherit from multiple parent classes?",
+      "options": ["Yes", "No", "Depends on the Python version", "Only if using a special decorator"],
+      "correct_answer": "Yes"
+    },
+    {
+      "question": "What is the correct syntax for creating a child class in Python?",
+      "options": ["class ChildClass(BaseClass):", "class ChildClass < BaseClass:", "ChildClass = class(BaseClass):", "class ChildClass extends BaseClass:"],
+      "correct_answer": "class ChildClass(BaseClass):"
+    }
+  ],
+  "Python Iterators": [
+    {
+      "question": "What is the main difference between an iterable and an iterator in Python?",
+      "options": [
+        "An iterable is a sequence, and an iterator is an object",
+        "An iterable is an object, and an iterator is a sequence",
+        "An iterable is mutable, and an iterator is immutable",
+        "An iterable is a class, and an iterator is an instance"
+      ],
+      "correct_answer": "An iterable is a sequence, and an iterator is an object"
+    },
+    {
+      "question": "How do you create an iterator in Python?",
+      "options": ["Using the for loop", "Using the create_iterator() function", "By implementing the __iterate__ method", "By using the iter() function"],
+      "correct_answer": "By using the iter() function"
+    },
+    {
+      "question": "What error does Python raise when an iterator reaches the end of the sequence?",
+      "options": ["EndOfSequenceError", "StopIteration", "IteratorException", "SequenceEndError"],
+      "correct_answer": "StopIteration"
+    },
+    {
+      "question": "How do you handle the StopIteration exception in Python?",
+      "options": ["Using the continue statement", "Using the break statement", "Using the try-except block", "By returning a special value"],
+      "correct_answer": "Using the try-except block"
+    },
+    {
+      "question": "What is polymorphism in Python?",
+      "options": [
+        "The ability of a function to take on multiple forms",
+        "The ability of an object to take on multiple forms",
+        "The ability of a variable to take on multiple forms",
+        "A special type of loop"
+      ],
+      "correct_answer": "The ability of a function to take on multiple forms"
+    }
+  ],
+  "Python Scope": [
+    {
+      "question": "What is the local scope in Python?",
+      "options": [
+        "The scope of a variable within a function",
+        "The scope of a variable within a class",
+        "The scope of a variable outside any function or class",
+        "A scope that is not recommended"
+      ],
+      "correct_answer": "The scope of a variable within a function"
+    },
+    {
+      "question": "What is the global keyword used for in Python?",
+      "options": [
+        "To define a variable as global",
+        "To access a global variable within a function",
+        "To create a global function",
+        "To import a module globally"
+      ],
+      "correct_answer": "To access a global variable within a function"
+    },
+    {
+      "question": "Can a variable with the same name exist in both local and global scopes in Python?",
+      "options": ["Yes", "No", "Depends on the variable type", "Only for certain variable types"],
+      "correct_answer": "Yes"
+    },
+    {
+      "question": "What happens if a local variable has the same name as a global variable in Python?",
+      "options": [
+        "An error is raised",
+        "The local variable overrides the global variable within the function",
+        "The global variable is deleted",
+        "Both variables can be used interchangeably"
+      ],
+      "correct_answer": "The local variable overrides the global variable within the function"
+    }
+  ],
+  "Python Functions": [
+    {
+      "question": "How do you define a function in Python?",
+      "options": ["function", "define", "def", "func"],
+      "correct_answer": "def"
+    },
+    {
+      "question": "What is the purpose of the 'return' statement in a Python function?",
+      "options": [
+        "To print a value",
+        "To terminate the function execution",
+        "To return a value from the function",
+        "To define a recursive function"
+      ],
+      "correct_answer": "To return a value from the function"
+    },
+    {
+      "question": "How do you pass a list as an argument to a Python function?",
+      "options": ["Using the list() function", "By separating list elements with commas", "Enclose the list in square brackets", "Using the * operator"],
+      "correct_answer": "Using the * operator"
+    },
+    {
+      "question": "What is recursion in Python?",
+      "options": [
+        "A way to repeat a statement",
+        "A way to call a function within itself",
+        "A loop structure",
+        "A way to avoid using loops"
+      ],
+      "correct_answer": "A way to call a function within itself"
+    },
+    {
+      "question": "What is the purpose of the 'pass' statement in a Python function?",
+      "options": [
+        "To indicate the end of a code block",
+        "To break out of a loop",
+        "To create a placeholder with no action",
+        "To terminate the function execution"
+      ],
+      "correct_answer": "To create a placeholder with no action"
+    },
+    {
+      "question": "How do you define a function with default parameter values in Python?",
+      "options": [
+        "def my_function(default=1):",
+        "def my_function(default = 1):",
+        "def my_function(default):",
+        "def my_function(): default = 1"
+      ],
+      "correct_answer": "def my_function(default=1):"
+    },
+    {
+      "question": "What is the purpose of the 'global' keyword in Python functions?",
+      "options": [
+        "To define a variable as global",
+        "To access a global variable within a function",
+        "To create a global function",
+        "To import a module globally"
+      ],
+      "correct_answer": "To define a variable as global"
+    },
+    {
+      "question": "What is the purpose of the '**' in a function definition?",
+      "options": [
+        "To indicate a power operation",
+        "To pass a variable number of keyword arguments",
+        "To multiply two variables",
+        "To create a comment"
+      ],
+      "correct_answer": "To pass a variable number of keyword arguments"
+    },
+    {
+      "question": "What is the purpose of the 'lambda' keyword in Python?",
+      "options": [
+        "To create anonymous functions",
+        "To define a variable as a constant",
+        "To initialize a list",
+        "To create a temporary variable"
+      ],
+      "correct_answer": "To create anonymous functions"
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\ndef add_numbers(a, b):\n    return a + b\nresult = add_numbers(3, 5)\nprint(result)\n```",
+      "options": ["35", "8", "15", "None"],
+      "correct_answer": "8"
+    },
+    {
+      "question": "How do you call a function with keyword arguments in Python?",
+      "options": [
+        "function_name(arguments)",
+        "function_name(keyword1=value1, keyword2=value2)",
+        "function_name(*args)",
+        "function_name(**kwargs)"
+      ],
+      "correct_answer": "function_name(keyword1=value1, keyword2=value2)"
+    }
   ]
 }
 
